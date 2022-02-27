@@ -1,2 +1,2 @@
 # ayudantias-ic-uah
- series de ayudantías realizadas en la UAH.
+ Ayudantías realizadas en Ingeniería Comercial - UAH para los cursos de: Economía Matemática, Macroeconomía, Microeconomía y Organización Industrial.
