@@ -1,0 +1,92 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán Salgado}
+\title{Macroeconomía II}
+\date{03 de Abril del 2018}
+\begin{document}
+\maketitle
+\textbf{1. Consumo (Parcial 2017):} Asuma que un consumidor vive hoy y mañana, y su función de utilidad es $U(c_{1},c_{2})=ln \left( c_{1}\right) +\beta ln \left( c_{2}\right) $. El consumidor tiene acceso al mercado de capitales durante el primer periodo, donde puede ahorrar en un monto $ b_{2} \geq 0 $ o enduedarse en un monto $ b_{2}\leq 0 $, a una tasa de interés nominal de $ I \equiv 1+i $. En esta economía no existe incertidumbre, y en cada período recibe un ingreso de $ y $. El precio de los bienes al consumidor es $ 1 $ en el primer periodo, mientras que en el segundo período es $ p_{2} $, por lo que la restricción presupuestaria intertemporal es:
+\begin{align*}
+c_{1}+\dfrac{p_{2}c_{2}}{I}&=y_{1}+\dfrac{p_{2}y_{2}}{I}
+\end{align*}
+
+\begin{itemize}
+\item[(a)] Escriba el lagrangiano el problema de optimización del consumidor (utilice $\lambda$ como multiplicador de la restricción presupuestaria). Además obtenga la ecuación de Euler intertemporal.
+
+\textbf{Respuesta:} Como tenemos la función de utilidad y la restricción presupuestaria intertemporal de las familias sólo armamos el lagrangeano para luego obtener las condiciones de primer orden y así establecer el Euler de Consumo Intertemporal.
+\begin{equation}
+\max_{c_{1},c_{2}} L: ln \left( c_{1}\right) +\beta ln \left( c_{2}\right) + \lambda \left( y_{1}+\dfrac{p_{2}y_{2}}{I} - c_{1}-\dfrac{p_{2}c_{2}}{I} \right) 
+\end{equation}
+
+Como la única variable de control es el consumo, encontraremos las derivadas parciales respecto al consumo en el periodo actual y en el periodo futuro. Esto es:
+
+\begin{align*}
+\dfrac{\partial L}{\partial c_{1}}&= \dfrac{1}{c_{1}}-\lambda =0 \Rightarrow \dfrac{1}{c_{1}}=\lambda & (1.1)\\
+\dfrac{\partial L}{\partial c_{2}}&= \dfrac{\beta}{c_{2}} - \dfrac{\lambda p_{2}}{I}= \Rightarrow \dfrac{\beta I}{p_{2}}= \lambda c_{2} & (1.2) \\ 
+\end{align*}
+
+Introduciendo la ecuación $ (1.1) $ en $ (1.2) $ obtenemos el Euler de Consumo Intertemporal: $ \dfrac{\beta I}{p_{2}}\dfrac{c_{1}}{c_{2}}=1 $
+\item[(b)] Obtenga la decisión de consumo y de ahorro-endeudamiento óptimo, es decir, obtenga $ c_{1} $, $ c_{2} $, $ b_{2} $ en términos de $ \beta $, $ I $, $ p_{2} $ e $ y $.
+
+\textbf{Respuesta:} Desde el Euler de Consumo Intertemporal podemos escribir este óptimo de la siguiente forma: $ c_{2}=\dfrac{\beta I c_{1}}{p_{2}} $. Sea la restricción presupuestaria:
+\begin{align*}
+c_{1}+\dfrac{p_{2}c_{2}}{I}&=y_{1}+\dfrac{p_{2}y_{2}}{I}\\
+c_{1}+\beta c_{1}&=y_{1}+\dfrac{p_{2}y_{2}}{I}\\
+c_{1}^{*}&=\left( y_{1}+\dfrac{p_{2}y_{2}}{I}\right) \left( \dfrac{1}{1+\beta}\right) 
+\end{align*}
+
+Como $ c_{1}^{*}=\left( y_{1}+\dfrac{p_{2}y_{2}}{I}\right) \left( \dfrac{1}{1+\beta}\right)  $ lo podemos reemplazar en el Euler de Consumo, esto es:
+\begin{align*}
+c_{2}&=\dfrac{\beta I c_{1}}{p_{2}}\\
+c_{2}&=\dfrac{\beta I}{p_{2}} \left( y_{1}+\dfrac{p_{2}y_{2}}{I}\right) \left( \dfrac{1}{1+\beta}\right)\\
+c_{2}^{*}&=\left(\dfrac{\beta}{1+ \beta} \right)\left( \dfrac{I y_{1}}{p_{2}} + y_{2}\right)  
+\end{align*}
+
+El ahorro/deuda se construye como $ b_{2}=y_{1}-c_{1}^{*} $. Esto es:
+\begin{align*}
+b_{2}&= y_{1}- \left( y_{1}+\dfrac{p_{2}y_{2}}{I}\right) \left( \dfrac{1}{1+\beta}\right) \\
+b_{2}&= y_{1}\left( \dfrac{\beta}{1+ \beta} \right) - \dfrac{p_{2}y_{2}}{I(1+\beta)}\\
+\end{align*}
+\item[(c)] Cuál es el efecto de un alza del nivel de precios $ p_{2} $ en la canasta de consumo y el ahorro-endeudamiento? Explique. (\textbf{Ayuda:} Defina la tasa de interés real como $ R=\dfrac{I}{p_{2}}$ y reescriba la restricción presupuestaria intertemporal de manera que aparezca $ R $, pero no $ I $ ni $ p_{2} $).
+
+\textbf{Respuesta:} Sea $ R=\dfrac{I}{p_{2}} $, si $ \bar{I} $ cuando $ \uparrow p_{2} \Rightarrow \downarrow R $. Y reemplazando $ R $ en $ c_{1}, c_{2}, $ y $ b_{2} $ tenemos:
+
+\begin{align*}
+c_{1}^{*}&=\left( y_{1}+\dfrac{p_{2}y_{2}}{I}\right) \left( \dfrac{1}{1+\beta}\right) &\Rightarrow c_{1}=\left( y_{1}+\dfrac{y_{2}}{R}\right) \left( \dfrac{1}{1+\beta}\right)\\
+c_{2}^{*}&=\left(\dfrac{\beta}{1+ \beta} \right)\left( \dfrac{I y_{1}}{p_{2}} + y_{2}\right) &\Rightarrow c_{2}^{*}&=\left(\dfrac{\beta}{1+ \beta} \right)\left( Ry_{1} + y_{2}\right)\\
+b_{2}&= y_{1}\left( \dfrac{\beta}{1+ \beta} \right) - \dfrac{p_{2}y_{2}}{I(1+\beta)} & \Rightarrow b_{2}&= y_{1}\left( \dfrac{\beta}{1+ \beta} \right) - \dfrac{y_{2}}{R(1+\beta)}
+\end{align*}
+
+Buscando el efecto marginal del aumento (variación positiva) de la tasa de interés tenemos:
+\begin{align*}
+\dfrac{\partial c_{1}}{\partial R} &= \dfrac{-1}{1+\beta}\dfrac{y_{2}}{R^{2}} < 0\\
+\dfrac{\partial c_{2}}{\partial R} &= \dfrac{\beta}{1+\beta}y_{1} > 0\\
+\dfrac{\partial b_{2}}{\partial R} &= \dfrac{1}{1+\beta}\dfrac{y_{2}}{R^{2}} > 0\\
+\end{align*}
+
+Entonces lo que ocurre es: $ \uparrow p_{2} \Rightarrow \downarrow R \Rightarrow \uparrow c_{1} \wedge \downarrow c_{2} \wedge \downarrow b_{2} $
+\item[(d)] A la luz de su análisis en las preguntas anteriores, por qué se justificaría el énfasis en la estabilidad de precios que buscan los bancos centrales en el mundo?
+
+\textbf{Respuesta:} Aumentos de precios reducen la tasa de interés y desincentivan el ahorro. 
+ 
+\item[(e)]Considere el mismo individuo pero ahora su función de utilidad es la siguiente:
+\begin{align*}
+min & \left\lbrace c_{1},c_{2} \right\rbrace 
+\end{align*}
+
+Determine el consumo optimo y el ahorro en cada período (el álgebra de esto es muy simple si piensa la forma de la solución óptima).
+
+\textbf{Desafío}
+\end{itemize}
+
+\begin{center}
+\includegraphics[scale=0.6]{meme}
+\end{center}
+
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán}
+\title{Economía Matemática}
+\date{14 de Mayo del 2018}
+\begin{document}
+\maketitle
+\textbf{1.} Sea $ a \in IR $ un parámetro. Considere la siguiente función:
+\begin{align*}
+f(x;a)=2x^{1/2}-ax+a^{\beta}
+\end{align*}
+Use el teorema de la Envolvente para determinar el efecto de un cambio \textit{infinitisimal} de $ a$ en el máximo valor de la función.\\
+
+
+\textbf{2.} Pepe vive dos períodos de tiempo; Su juventud, o el presente, y su vejez, o el futuro, (período 2). La utilidad de Pepe depende de cuánto consume en ambos períodos:
+\begin{align*}
+U(c_{1},c_{2}):= u(c_{1})+\beta u(c_{2})
+\end{align*}
+Donde $u(c_{t})$ es la utilidad derivada del consumo $c_{t}$ en el período $t = 1, 2$
+y $\beta \in (0, 1)$ es el factor de descuento (valoración del futuro). Pepe dispone
+de $W$ unidades monetarias que puede usar tanto para consumir durante su juventud como para ahorrar en una AFP. Por cada unidad monetaria ahorrada durante su juventud, la AFP le devuelve a Pepe obtiene$ R > 1$
+unidades monetarias durante su vejez. En resumen: 
+\begin{align*}
+c_{1}+s&=W\\
+c_{2}&=Rs
+\end{align*}
+donde $s$ es la cantidad ahorrada en el período 1. El objetivo de Pepe es maximizar utilidad de toda su vida. Asuma que $u'(c_{t}) > 0$.
+\begin{itemize}
+\item[(a)] Exprese la utilidad de Pepe en términos de $s$, $W$ y $R$.
+\item[(b)] Plantee el problema que debe resolver Pepe.
+\item[(c)] Obtenga la condición de primer orden. Interprete la misma en términos
+económicos.
+\item[(d)] Imponga una condición sobre $u(c_{t})$ para que la condición de primer orden sea suficiente.
+\item[(e)] Demuestre que puede usar el teorema de la función implícita y escribir
+el ahorro optimo de Pepe $s^{*}$ como función de los parámetros del problema.
+\item[(f)] Use el resultado del apartado (e) para obtener las siguientes estáticas comparativas:
+\begin{align*}
+\dfrac{\partial s^{*}}{\partial W}, \dfrac{\partial s^{*}}{\partial R}, \dfrac{\partial s^{*}}{\partial \beta}
+\end{align*}
+Explique los resultados obtenidos desde un punto de vista económico.
+\item[(g)] Obtenga la función de máxima utilidad(función de utilidad indirecta) de Pepe:
+\begin{align*}
+V(W,R,\beta)
+\end{align*}
+\item[(h)] Use el teorema de la Envolvente para obtener:
+\begin{align*}
+\dfrac{\partial V(W,R,\beta)}{\partial W}, \dfrac{\partial V(W,R,\beta)}{\partial R}, \dfrac{\partial V(W,R,\beta)}{\partial \beta}
+\end{align*}
+
+\end{itemize}
+
+\end{document}

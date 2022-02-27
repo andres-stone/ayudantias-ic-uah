@@ -1,0 +1,42 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Dinero e Inflación}
+\title{Macroeconomía II}
+\date{17 de Agosto del 2019}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item \textbf{Cash in Advance:} Este modelo afirma la necesidad de dinero para el consumo intertemporal de las familia. Considere el modelo que enfrentan las familias:
+\begin{align*}
+\max_{{c_{t},m_{t+1}}}U(c)&=ln c_{1} + \beta ln c_{2}\\
+\end{align*}
+Sujeto a :
+\begin{equation}
+P_{t}c_{t}=P_{t}y_{t}-\dfrac{B_{t+1}}{(1+i)}+B_{t}+M_{t}-M_{t+1}
+\end{equation}
+\begin{equation}
+c_{t+1}=\dfrac{M_{t+1}}{P_{t+1}}
+\end{equation}
+\begin{itemize}
+\item[a.]Suponga un mundo de dos periodos $ (T=2) $. Escriba el problema que resuelven las familias. Ayuda: Suponga que $ b_{1}=b_{3}=0 $ y $ m_{3}=0 $
+\item[b.]Escriba el Lagrangeano, utilizando $ \lambda_{1}$,  $\lambda_{2}$ y $\gamma_{2} $ a las restricciones de primer y segundo periodo y de la restricción CIA respectivamente. Encuentre las CPO.
+\item[c.]Del modelo, demuestre la siguiente proposición: \textit{En el corto plazo un aumento en la oferta de dinero por parte del banco central no provoca un alza inmediata de los precios, si no que de la producción, sin embargo en el largo plazo los precios aumentaran para que los saldos reales se contraigan y se mantenga la neutralidad del dinero.} Además, suponga que $\beta\left( 1+r\right) =1$:\\
+\end{itemize}
+\item Usando el siguiente modelo:
+\begin{center}
+$ L: \dfrac{c_{1}^{1-\sigma}}{1-\sigma}+\beta\dfrac{c_{2}^{1-\sigma}}{1-\sigma}+\lambda_{1}\left( y_{1} + \dfrac{b_{2}}{1+i}  + m_{1} - m_{2} - c_{1} \right) + \beta\lambda_{2}\left( y_{2} + b_{2} + m_{2} - c_{2}   \right) + \beta\delta_{2}\left( m_{2} -\theta c_{2}  \right)   $
+\end{center}
+Donde $ (1+i) $ es la tasa de interés nominal. 
+\begin{itemize}
+\item[a.] Suponga que una fracción de $ \theta $ del consumo en el periodo 2 se realiza con dinero, el resto se realiza a través de transferencias electrónicas. Obtenga las condiciones de primer orden.
+\item[b.] Suponga que la empresa que da el servicio electronico deja de funcionar, con eso $ \theta=1 $. Analice los efectos de este cambio en la inflación y en el consumo.
+\end{itemize}
+\end{enumerate}
+\end{document}

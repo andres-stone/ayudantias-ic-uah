@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán}
+\title{Economía Matemática}
+\date{22 de Marzo de 2018}
+\begin{document}
+\maketitle
+\textbf{1. Lógica Proposicional:} Suponga la siguiente proposición:
+\begin{equation}
+p\Rightarrow \left[ p \wedge \sim \left( q \vee r \right)  \right] 
+\end{equation}
+
+Utilizando propiedades de absorción demuestre que la proposición anterior es equivalente a $\sim p \vee \left( \sim q \wedge \sim r \right) $.\\
+
+\textbf{2. Conjuntos:} Suponga dos conjuntos cualesquiera $A$, $B$. Utilizando propiedades de conjuntos, demuestre la siguiente equivalencia.
+\begin{equation}
+A\bigtriangleup B =\left( A \ B \right) \cup \left( B \ A \right) \equiv \left( A \cup B \right) \ \left( B \cap A \right)
+\end{equation}
+
+\textbf{3. Cardinalidad de Conjuntos:} Suponga que una encuesta a 92 estudiantes de economía sobre sus preferencias respecto a microeconomía, macroeconomía
+y econometría, arrojo que 53 de estos les gusta la microeconomía, 46 la macroeconomía
+y 35 la econometría, sin embargo sus respuestas fueron indecisas, pues 22 dijeron que
+les gustaba tanto la microeconomía como la macroeconomía, 16 la micro y la econometría, y 14 la
+macroeconomía y la econometría. Ahora bien, dado esto, ¿Es posible computar a cuantos estudiantes les gusta las tres áreas? y ¿Cuántos prefiere una de ellas respecto a las otras?\\
+
+\textbf{4. Precios de competencia:} Sea $ \bar{p}=\left( p_{1},p_{2},p_{3} \right)  $ el vector de precio en el que se venden tres productos $A$, $B$ y $C$. Se esima que la oferta y la demanda de cada uno de ellos viene dada por:
+\begin{align*}
+S_{A}&=15p_{1}+p_{2}+p_{3}-13 & D_{A}&=70-8p_{1}-p_{2}-p_{3}\\
+S_{B}&=p_{1}+20p_{2}+10p_{3}-10 & D_{B}&= 93-2p_{1}-4p_{2}-p_{3}\\
+S_{C}&=10p_{1}+15p_{2}+30p_{3}-50 & D_{C}&= 107-p_{1}-3p_{2}-5p_{3}\\
+\end{align*}
+
+Donde $ p_{1} $, $ p_{2} $ y $ p_{3} $ son los precios unitarios de los productos $ A $, $ B $ y $ C $, respectivamente. Calcula el vector $ \bar{p} $ para este sistema de ecuaciones.\\
+
+\textbf{5. Topología en IR:} Suponga que usted tiene un función de utilidad dada por $u(x)=10x_{1}^{2}+x_{2}$. Los precios que enfrenta son $p_{1}=2$ y $p_{2}=1$ para el bien 1 y 2 respectivamente. Su ingreso es igual a 100. Suponga además que por temas de oferta en el mercado, no se puede demandar más de 40 unidades del bien 2, por tanto su conjunto presupuestario es:
+\begin{equation}
+C(p_{1},p_{2},m):= \left\lbrace x \in IR_{+}^{2}: 2x_{1}+x_{2} \leq 100, x_{2}\leq 2 \right\rbrace 
+\end{equation}
+\begin{itemize}
+\item[(a)] Demuestre que $u(x)$ es continua para todo $ a \in IR_{+}^{2}$.
+\item[(b)] Demuestre que $C$ es acotado.
+\end{itemize}
+\end{document}

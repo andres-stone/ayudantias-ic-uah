@@ -1,0 +1,28 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Dinero e Inflación}
+\title{Macroeconomía II}
+\date{10 de Agosto}
+\begin{document}
+\maketitle
+\begin{itemize}
+\item[1.] Supondremos que las familias decidirán cuanto dinero demandar para el consumo presente y futuro. Luego el problema de las familias es:\\
+\begin{align*}
+\max_{{c_{t},m_{t}}}U(c,m)&:= \sum_{t=1}^{T}\beta^{t-1}\left[ lnc_{t}+ln\dfrac{M_{t}}{P_{t}}\right]\\
+s&.a\\
+P_{t}c_{t}&=P_{t}y_{t}-\dfrac{B_{t+1}}{(1+i)}+B_{t}-M_{t}+M_{t-1}
+\end{align*}
+donde $ M_{t} $ es la oferta nominal de dinero y $ B_{t+1} $ es la deuda nacional.\\
+\begin{itemize}
+\item[(a)]Suponga un mundo de dos periodos $ (T=2) $. Escriba el problema que enfrenta las familias, y encuentre las condiciones de primer orden, para la restricción de primer periodo utilice $ \lambda_{1} $ y para la segunda restricción utilice $ \lambda_{2} $. Además, considere que $ b_{1}=b_{3}=0 $ , $ m_{0}=0 $, $ (1+r) = \dfrac{(1+i)}{(1+\pi_{2})} $ y $ \dfrac{P_{2}}{P_{1}} = 1 + \pi_{2} $
+\item[(b)]Demuestre que la demanda de saldos reales para el primer y segundo periodo son $ m_{1}=c_{1}\left[ \dfrac{1+i}{i}\right]  $ y $ m_{2}=c_{2} $ respectivamente. Interprete el como reacciona la demanda de saldos en el primer periodo ante un cambio en la tasa de interés nominal.
+\item[(c)]Utilizando $ i=r+\pi_{2} $, reescriba la demanda de dinero del primer periodo en función de la tasa de interés real y la tasa de inflación esperada. Cómo reacciona la demanda ante variaciones en la inflación esperada? Suponga que $\beta\left( 1+ r \right) =1$, y que el Banco Central fija $ M_{1} $ y decide $ M_{2} $
+\end{itemize}
+\end{itemize}
+\end{document}

@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán}
+\title{Microconomía II}
+\date{14 de Julio del 2018}
+\begin{document}
+\maketitle
+\textbf{1.} Suponga la siguiente función de utilidad:
+\begin{align*}
+u(x_{1},x_{2})=x_{1}^{0,3}x_{2}^{0,7}
+\end{align*}
+Suponga que los precios de los bienes están dados por $ p_{1} $ y $ p_{2} $ mientras que el ingreso disponible del consumidor es $ m $.
+\begin{itemize}
+\item[a.] Plantee el problema del consumidor, y su solución óptima en un gráfico.\\
+\textbf{Respuesta:} El problema del consumidor viene dado por:
+\begin{align*}
+\max_{x_{1},x_{2}} u(x_{1},x_{2})&=x_{1}^{0,3}x_{2}^{0,7}\\
+s&.a\\
+m&=p_{1}x_{1}+p_{2}x_{2}
+\end{align*}
+Gráfico adjunto.
+\item[b.] Determine la condición de equilibrio.\\
+\textbf{Respuesta:} La condición de equilibrio viene dada por $ RMS = - \dfrac{p_{1}}{p_{2}} $, ahora sabemos que la $ RMS=-\left( \dfrac{\alpha}{1-\alpha}\right) \dfrac{x_{2}}{x_{1}} $, entonces, reemplazando tenemos:
+\begin{align*}
+RMS&=-\left( \dfrac{0.3}{0.7}\right) \dfrac{x_{2}}{x_{1}}
+\end{align*}
+\item[c.] Determine la relación óptima de consumo.\\
+\textbf{Respuesta:} Igualando la \textit{RMS} a la pendiente de la recta presupuestaria, tendremos la relación óptima de consumo:
+\begin{align*}
+\left( \dfrac{0.3}{0.7}\right) \dfrac{x_{2}}{x_{1}}&=\dfrac{p_{1}}{p_{2}}\\
+x_{2}&=\dfrac{p_{1}}{p_{2}}\left( \dfrac{0.7}{0.3}\right)x_{1}\\
+\end{align*}
+\item[d.] Determine la demanda de los bienes $ x_{1} $ y $ x_{2} $.\\
+\textbf{Respuesta:} Evaluando la relación óptima de consumo en la restricción presupuestaria:
+\begin{align*}
+m&=p_{1}x_{1}+p_{2}x_{2}\\
+m&=p_{1}x_{1}+p_{2} \left( \dfrac{p_{1}}{p_{2}}\dfrac{0.7}{0.3} x_{1} \right) \\
+m&=p_{1}x_{1}\left( \dfrac{10}{3}\right) 
+\end{align*}
+
+Por tanto la demanda individual del bien $ x_{1} =\dfrac{3}{10}\dfrac{m}{p_{1}} $, luego, esta cantidad optima la reemplazamos en la relación óptima obtendremos la demanda individual del bien $ x_{2} = \dfrac{7}{10}\dfrac{m}{p_{2}} $
+\item[e.] Suponiendo que los precios y el ingreso son $ p_{1}=30 $, $ p_{2}=40 $ y $ m=20.000 $. Determine la canasta y llamela $ A $.\\
+\textbf{Respuesta:} Evaluando los valores en las curvas de demanda:
+\begin{align*}
+x_{1}&=\dfrac{3}{10}\dfrac{m}{p_{1}}=\dfrac{3}{10}\dfrac{20000}{30}=200\\
+x_{2}&=\dfrac{7}{10}\dfrac{m}{p_{2}}=\dfrac{3}{10}\dfrac{20000}{40}=350
+\end{align*}
+
+Finalmente la canasta óptima de consumo es: $ A=(x_{1}^{A},x_{2}^{A})=(200,350) $
+\item[f.] Suponga que el precio del bien 1 aumento a $ p_{1}=40 $, ceteris paribus, determine la nueva canasta y llamela $ C $.\\
+\textbf{Respuesta:} Evaluando los valores en las curvas de demanda:
+\begin{align*}
+x_{1}&=\dfrac{3}{10}\dfrac{m}{p_{1}^{'}}=\dfrac{3}{10}\dfrac{20000}{40}=150\\
+x_{2}&=\dfrac{7}{10}\dfrac{m}{p_{2}}=\dfrac{3}{10}\dfrac{20000}{40}=350
+\end{align*}
+
+Finalmente la canasta óptima de consumo es: $ C=(x_{1}^{C},x_{2}^{C})=(150,350) $
+\item[g.] Determine el ingreso compensado para que el consumidor alcance nuevamente la canasta.\\
+\textbf{Respuesta:} El ingreso disponible se obtiene a partir de la siguiente formula:
+\begin{align*}
+m^{'}&=(p_{1}^{'}-p_{1})x_{1}^{A}+m\\
+m^{'}&=(40-30)200+20000\\
+m^{'}&=22000\\
+\end{align*}
+\item[h.] Determine la canasta óptima para que el nuevo ingreso (ingreso compensado) y el nuevo precio del bien 1, llamela B.
+\begin{align*}
+x_{1}&=\dfrac{3}{10}\dfrac{m^{'}}{p_{1}^{'}}=\dfrac{3}{10}\dfrac{22000}{40}=165\\
+x_{2}&=\dfrac{7}{10}\dfrac{m^{'}}{p_{2}}=\dfrac{3}{10}\dfrac{22000}{40}=385
+\end{align*}
+
+Finalmente la canasta óptima de consumo es: $ B=(x_{1}^{B},x_{2}^{B})=(165,385) $
+\item[i.] Calcule el Efecto Sustitución y el Efecto Ingreso ante el cambio del precio del bien 1.\\
+\textbf{Respuesta:} El Efecto Sustitución es el traslado desde $ x_{1}^{A}\rightarrow x_{1}^{B} $ y el Efecto Ingreso es el traslado desde $ x_{1}^{B}\rightarrow x_{1}^{C} $, entonces:
+\begin{align*}
+ES&=x_{1}^{A}-x_{1}^{B}=200-165=35\\
+EI&=x_{1}^{B}-x_{1}^{C}=165-150=15\\
+ET&=ES+EI=50
+\end{align*}
+\item[j.] Gráfique las situaciones.\\
+\textbf{Respuesta:} Gráfico adjunto.
+\end{itemize}
+\end{document}

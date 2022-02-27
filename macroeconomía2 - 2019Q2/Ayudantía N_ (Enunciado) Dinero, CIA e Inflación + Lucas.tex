@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán Salgado}
+\title{Macroeconomía II}
+\date{15 de Junio del 2018}
+\begin{document}
+\maketitle
+\textbf{1. Dinero} Supondremos que las familias decidirán cuanto dinero demandar para el consumo presente y futuro. Luego el problema de las familias es:\\
+\begin{align*}
+\max_{{c_{t},m_{t}}}U(c,m)&:= \sum_{t=1}^{T}\beta^{t-1}\left[ lnc_{t}+ln\dfrac{M_{t}}{P_{t}}\right]\\
+s&.a\\
+P_{t}c_{t}&=P_{t}y_{t}-\dfrac{B_{t+1}}{(1+r)}+B_{t}-M_{t}+M_{t-1}
+\end{align*}
+donde $ M_{t} $ es la oferta nominal de dinero y $ B_{t+1} $ es la deuda nacional.\\
+\begin{itemize}
+\item[(a)]Suponga un mundo de dos periodos $ (T=2) $. Escriba el problema que enfrenta las familias, y encuentre las condiciones de primer orden, para la restricción de primer periodo utilice $ \lambda_{1} $ y para la segunda restricción utilice $ \lambda_{2} $. Además, considere que $ b_{1}=b_{3}=0 $ y $ m_{0}=0 $
+\item[(b)]Demuestre que la demanda de saldos reales para el primer y segundo periodo son $ m_{1}=c_{1}\left[ \dfrac{1+r}{r}\right]  $ y $ m_{2}=c_{2} $ respectivamente. Interprete el como reacciona la demanda de saldos en el primer periodo ante un cambio en la tasa de interés nominal.
+\item[(c)]Utilizando $ r=\bar{r}+\pi_{2} $, reescriba la demanda de dinero del primer periodo en función de la tasa de interés real y la tasa de inflación esperada. Cómo reacciona la demanda ante variaciones en la inflación esperada? Suponga que $\beta\left( 1+\bar{r}\right) =1$, y que el Banco Central fija $ M_{1} $ y decide $ M_{2} $
+\item[(d)]Qué es la \textbf{Neutralidad del Dinero}? Cómo ésta definición se ajusta al análisis realizado en el inciso anterior? 
+\end{itemize}
+
+\textbf{2. Dinero (Parcial 2017)} Las siguientes ecuaciones describen el equilibrio en un modelo de dos períodos donde el consumidor tiene al dinero como parte de su función de utilidad:
+\begin{align*}
+c_{2}&=\beta\left( 1+r\right)c_{1} & (1)\\
+m_{2}&=c_{2} & (2)\\
+m_{1}&=c_{1}\dfrac{1+i}{i} & (3)\\
+1+i&=\left( 1+r\right) \left(1+\pi_{2} \right)  & (4)\\
+c_{1}+\dfrac{c_{2}}{1+r}&=y_{1}+\dfrac{y_{2}}{1+r}+m_{1}\dfrac{i}{1+i}+\dfrac{m_{2}}{1+r} & (5)
+\end{align*}
+
+Adicionalmente, asuma que $ \beta\left( 1+ r \right) =1  $ y recuerde que $ m_{1}=\dfrac{M_{1}}{P_{1}} $
+\begin{itemize}
+\item[(a)] Muestre que el consumo en ambos períodos no depende ni del nivel de precios, ni de los saldos monetarios, ni de la inflación.
+\item[(b)] El señoreaje $S$ corresponde al ingreso real que percibe quien tiene el monopolio
+de la creación del dinero, en este caso, el banco central. Este se calcula como
+$S = \dfrac{\left(M_{2}-M_{1} \right) }{P_{1}}$. Exprese $S$ en términos de la inflación $\pi_{2}$, la tasa de
+interés real $r$ y el ingreso real de los hogares $y_{1}$ e $y_{2}$.
+\item[(c)] Asuma que los precios son completamente flexibles y existe información perfecta.
+¿Qué ocurre con $P_{1}$, $P_{2}$ $\pi_{2}$ y $S$ si el banco central decide aumentar $M_{1}$?
+\item[(d)] Discuta brevemente si usted ve alguna contradicción entre los objetivos y el
+financiamiento del banco central
+\end{itemize}
+\end{document}

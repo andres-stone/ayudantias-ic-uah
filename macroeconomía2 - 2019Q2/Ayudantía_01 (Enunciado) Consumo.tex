@@ -1,0 +1,29 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Consumo, Ahorro e Inversión}
+\title{Macroeconomía II}
+\date{06 de Julio del 2018}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item \textbf{Consumo Intertemporal:} Suponga un modelo de dos periodos, donde las familias maximizan su utilidad dada sus circunstancias económicas. Suponga que la utilidad instantánea de los agentes se descuenta por una tasa $ \beta=\dfrac{1}{1+\rho} $ donde $\rho \in \left[ 0,+\infty\right)  $. Sea el problema del consumidor:
+\begin{equation}
+\max_{C_{t},N_{t}} U:= \sum_{t=1}^{T}\beta^{t-1}\left(  \dfrac{C_{t}^{1-\theta}}{1-\theta}-\dfrac{N^{1+\gamma}}{1+\gamma} \right) 
+\end{equation}
+Sujeto a la siguiente restricción:
+\begin{equation}
+C_{t}+\dfrac{C_{t+1}}{1+r}=w_{t}N_{t}+\dfrac{w_{t+1}N_{t+1}}{1+r}
+\end{equation}
+\begin{itemize}
+\item[(a)] Resuelva el problema para una utilidad instantánea genérica, es decir, $ u(C_{t},N{t}) $. Interprete el euler de consumo y la oferta de trabajo.
+\item[(b)] Tanto la tasa de interés como la tasa de descuento son iguales a $ 5\% $, ¿Cómo se compara el nivel de consumo en el período 1 con el consumo esperado en el periodo 2? Además sabe que en el primer periodo el ingreso es de $5$ y en el periodo 2 es de $10$. (\textbf{Hint:} Suponga que $  \theta \rightarrow 1 $)
+\item[(c)] ¿Qué ocurré con el consumo en ambos periodos si la tasa de interés sube a $ 10\% $?¿En qué dirección van el efecto sustitución y el efecto ingreso?
+\end{itemize}
+\end{enumerate}
+\end{document}

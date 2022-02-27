@@ -1,0 +1,79 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán Salgado}
+\title{Macroeconomía II}
+\date{2018}
+\begin{document}
+\maketitle
+\textbf{1. Consumo y Deuda:} Suponga un modelo de dos periodos, donde las familias maximizan su utilidad dada sus circunstancias económicas. Suponga que la utilidad instantánea de los agentes se descuenta por una tasa $\beta = \dfrac{1}{1+\rho} $ donde $\rho \in [0, +\infty).$ Sea el problema del consumidor:
+
+\begin{equation}
+U:=Ln C_{1}-\dfrac{L_{1}^{1+\nu}}{1+\nu}+\beta\left( LnC_{2}-\dfrac{L_{2}^{1+\nu}}{1+\nu}\right) 
+\end{equation}
+Las restricción de las familias viene dada en dos periodos:
+\begin{equation}
+C_{1}=w_{1}L_{1}-\dfrac{B_{2}}{R}-T_{1}+\pi_{1}
+\end{equation}
+\begin{equation}
+C_{2}=w_{2}L_{2}+B_{2}-T_{2}+\pi_{2}
+\end{equation} 
+
+\begin{itemize}
+\item[(a)] Resuelva el problema para una utilidad instantánea genérica, es decir, $u\left( C_{t}, N_{t} \right) $. Interprete el Euler de consumo y la Oferta de Trabajo.
+\end{itemize}
+
+\textbf{2. Restricciones de liquidez, seguridad social y binestar:} En este
+problema estudiaremos cómo las restricciones de liquidez y la existencia de sistemas de seguridad social afectan el bienestar de los individuos. Para ello, supondremos una economía compuesta por tres clases de individuos: jovenes, desde el nacimiento hasta los 20 años; adultos, desde los 21 hasta los 60, y viejos, desde los 61 hasta los 70, edad a la cual mueren. Cada año nace un nuevo joven y muere un viejo\footnote{De esta forma, en la economía siempre hay 70 individuos: 20 jovenes, 40 adultos y 10 viejos}.
+
+Los individuos reciben anualmente ingresos iguales a $Y_{A}$ cuando son adultos,
+mientras que cuando son jóvenes reciben $Y_{J} = \dfrac{1}{4}Y_{A}$ al año, y en la
+vejez su ingreso es igual a $Y_{V} = \dfrac{1}{5}Y_{A}$ anuales.
+La función de utilidad de los habitantes de esta economía viene dada por:
+\begin{equation}
+U=\sum_{t=1}^{70} log \left\lbrace C_{t}\right\rbrace 
+\end{equation}
+
+Donde $ C_{t} $ representa el consumo en cada período. Considere para todo el problema que $ r=\rho =0 $.
+\begin{itemize}
+\item[(a)]Suponga que los individuos no enfrentan restricciones de liquidez.
+Escriba el problema de optimización que afronta el individuo, incorporando
+la restricción presupuestaria (esta última no es necesario
+deducirla) y obtenga el consumo optimo $\bar{C_{t}}$ para cada período. Derive expresiones para el ahorro $s_{t}$ a lo largo de la vida del individuo y para el ahorro agregado $S_{t}$.
+\item[(b)]Suponga ahora que, durante su juventud, los individuos enfrentan
+restricciones de liquidez, de forma tal que no se pueden endeudar. Escriba el problema de optimización que enfrenta el individuo en este caso y calcule la trayectoria óptima del consumo $\bar{C_{t}}$, el ahorro
+$s_{t}$ y el ahorro agregado de la economía $S_{t}$. ¿Cómo se compara con el calculado en la parte (a)?
+\item[(c)]Calcule la utilidad de los individuos en los casos (a) y (b). ¿ En qué caso es mayor la utilidad? Explique su resultado.
+\item[(d)]Discuta qué sucede con el ahorro agregado en caso que la población crezca a una tasa de $n\%$ anual\footnote{Es decir, si en el año $t$ nacen $P_{t}$ personas, entonces en $t+1$ nacen $P_{t+1}=(1+n)P_{t}$} cuando no hay restricción de liquidez y cuando sí la hay. ¿Están mejor los individuos cuando la economía tiene mayor capacidad de ahorro?
+\item[(e)]Suponga ahora que los individuos no tienen restricciones de liquidez,
+pero se ven forzados a pagar un impuesto de suma alzada $\tau =\dfrac{1}{6}Y_{A}$durante su juventud y adultez que se les devuelve íntegramente en forma de transferencia al llegar a la vejez. Calcule nuevamente las
+trayectorias de ahorro y consumo. ¿ Tiene algún efecto sobre la conducta del individuo este mecanismo de seguridad social? ¿En qué casos se podría justificar la existencia
+de mecanismos de seguridad social?
+\end{itemize}
+
+\textbf{3. Consumo y tasa de interés} Considere un individuo que vive por dos periodos y maximiza la siguiente función
+de utilidad:
+\begin{equation}
+U=log C_{1}+\beta log C_{2}
+\end{equation}
+
+Donde $C_{i}$ es el consumo el período $i$ con $i = 1, 2$, $\beta = \dfrac{1}{1+\rho}$ y representa el factor de descuento intertemporal y $\rho$ la tasa del descuento (que refleja sus preferencia por el futuro respecto del presente). El individuo recibe su ingreso Y repartido en los dos periodos. En 1 recibe $\alpha Y$ y en 2 recibe $(1-\alpha )Y$
+
+Supondremos que hay una tasa de interés r y el individuo se puede endeudar o ahorrar todo lo que quiera a esa tasa.
+\begin{itemize}
+\item[(a)]Escriba la restricción presupuestaria intertemporal del individuo y encuentre las expresiones para el consumo y el ahorro individual S en ambos periodos como función de $Y, \alpha, r, \beta$
+\item[(b)]Suponga que $\alpha=1 $. ¿ Cómo se afecta el ahorro cuando cambia la tasa de interés? ¿Qué pasa en el caso general de $ \alpha $ positivo menor que 1? Discuta en particular como depende la reacción del consumo en el primer período y el ahorro a $ \alpha $.
+¿ Puede ser la respuesta del ahorro negativa a un alza de la tasa de interés?
+\item[(c)]Considere el mismo individuo pero ahora su función de utilidad es la siguiente:
+\begin{equation}
+min \left\lbrace C_{1},C_{2} \right\rbrace 
+\end{equation}
+
+Determine el consumo optimo y el ahorro en cada período (el álgebra de esto es muy simple si piensa la forma de la solución óptima sin necesidad de resolver la optimización). Discuta el efecto de $r$ sobre el ahorro, en particular analice sólo los casos de $\alpha=0 $ y $\alpha=1$.¿Es posible que el ahorro se reduzca cuándo sube la tasa de interés? Compare con su respuesta anterior. (Si tiene  problemas con el álgebra, que es sencilla, este parte se puede mostrar gráficamente).
+\end{itemize}
+\end{document}

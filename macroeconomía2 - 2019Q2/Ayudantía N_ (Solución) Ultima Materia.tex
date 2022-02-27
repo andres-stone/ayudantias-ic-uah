@@ -1,0 +1,365 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán Salgado}
+\title{Macroeconomía II}
+\date{Junio del 2018}
+\begin{document}
+\maketitle
+\textbf{1. Economía Cerrada}
+Usando el siguiente modelo resuelva los incisos\\
+
+Euler de Consumo
+\begin{equation}
+c_{t}=c_{t+1}-\dfrac{1}{\theta}\left[ r_{t} - \pi_{t+1}\right]+\varepsilon_{t}
+\end{equation}
+
+Oferta de trabajo
+\begin{equation}
+\upsilon n_{t}+\theta c_{t}=(w_{t}-p_{t})
+\end{equation}
+
+Función de producción
+\begin{equation}
+y_{t}=a_{t}+\alpha n_{t}
+\end{equation}
+
+Agregado
+\begin{equation}
+y_{t}=c_{t}
+\end{equation}
+
+Costos Marginales Reales
+\begin{equation}
+cmg_{t}^{r}=(w_{t}-p_{t})-a_{t}
+\end{equation}
+
+Curva de Phillips
+\begin{equation}
+\pi_{t}= \beta E_{t}\pi_{t+1}+ \lambda cmg_{t}^{r}+ \varepsilon_{t}^{s}
+\end{equation}
+
+Precios
+\begin{equation}
+p_{t}=\pi_{t}+p_{t-1}
+\end{equation}
+
+Salarios
+\begin{equation}
+w_{t}=\eta w_{t-1}+(1-\eta)w_{t}^{*}
+\end{equation}
+
+Desempleo
+\begin{equation}
+u_{t}=l_{t}-n_{t}
+\end{equation}
+
+Salario óptimo.
+\begin{equation}
+w_{t}^{*}=\upsilon l_{t}+\theta c_{t} +p_{t}
+\end{equation}
+
+La función de producción la podemos escribir de la siguiente forma: $n_{t}=y_{t}-a_{t}$
+
+\begin{itemize}
+\item[a.] Explique las consecuencias en la economía de un shock tecnológico. Use las ecuaciones y ayúdese con gráficos para su respuesta.
+\item[b.] Qué sucederá si el Banco Central aumenta la tasa de interés? 
+\end{itemize}
+
+\textbf{2. Economía Abierta}
+Usando el siguiente modelo resuelva el inciso $ a $, $ b $ y $ c $:\\
+
+Paridad de tasas de interés:
+\begin{equation}
+e_{t}=e_{t+1}-\left( i_{t}- \pi_{t+1} \right)+i_{t}^{*} 
+\end{equation}
+
+Minimización de costes:
+\begin{equation}
+e_{t}-\left( \dfrac{w}{P} \right)_{t}=n_{t}-m_{t}+constante  
+\end{equation}
+
+Costos marginales reales: 
+\begin{equation}
+CMg_{t}^{r}=\alpha\left( \dfrac{w}{P}\right)_{t}+(1-\alpha)e_{t}-a_{t}+constante 
+\end{equation}
+
+Curva de Phillips:
+\begin{equation}
+\pi_{t}=\beta\pi_{t+1}+\lambda CMg_{t}^{r}
+\end{equation}
+
+Exportaciones no cobre:
+\begin{equation}
+x_{t}=\eta e_{t}+y_{t}^{*}
+\end{equation}
+
+Función de producción:
+\begin{equation}
+y_{t}=\alpha n_{t}+(1-\alpha)m_{t}+a_{t}
+\end{equation}
+
+Equilibrio agregado:
+\begin{equation}
+y_{t}=\gamma_{1}c_{t}+\gamma_{2}x_{t}+(1-\gamma_{1}-\gamma_{2})g_{t}
+\end{equation}
+
+Consumo:
+\begin{equation}
+c_{t}=c_{t+1}-(i_{t}-\pi_{t+1})
+\end{equation}
+
+Oferta de trabajo:
+\begin{equation}
+vn_{t}=\left( \dfrac{w}{P} \right)_{t}-c_{t} 
+\end{equation}
+
+Regla de Taylor:
+\begin{equation}
+i_{t}=\phi \pi_{t}
+\end{equation}
+
+Gasto de gobierno:
+\begin{equation}
+g_{t}=e_{t}+P_{t}^{cobre}
+\end{equation}
+
+Restricción de la economía:
+\begin{equation}
+C_{t}=Y_{t}-e_{t}M_{t}+\dfrac{S_{t}B_{t+1}^{*}}{P_{t}(1+i_{t}^{*})\Omega}+\dfrac{S_{t}B_{t}^{*}}{P_{t}}
+\end{equation}
+
+Suponga que $ \Omega $ tiene la siguiente forma:
+\begin{equation}
+\Omega=\xi_{1}\dfrac{S_{t}B_{t+1}^{*}}{PIB_{t}}+\xi_{2}RPS_{t}
+\end{equation}
+
+Donde: 
+\begin{itemize}
+\item $ \dfrac{\partial \Omega}{\dfrac{S_{t}B_{t+1}^{*}}{PIB_{t}}} > 0 $
+\item $ \dfrac{\partial \Omega}{\partial RPS_{t}}>0 $
+\item $ RPS_{t}: Risk$ $premium $
+\end{itemize}
+
+\begin{itemize}
+\item[a.] Explique las consecuencias en la economía de un shock negativo del precio del cobre, $ P_{t}^{cobre} $. Use las ecuaciones y ayúdese con gráficos para su respuesta.
+
+\textbf{Respuesta:} Idéntico a una caída del gasto publico, el banco central reacciona ante la contracción bajando la tasa de interés nominal, lo que a largo plazo repara la tasa de interés
+real, incentivando a que aumente el consumo. Por el lado de la política de cambio, al caer
+la tasa nominal y asumiendo perfecta movilidad de capitales, saldrán capitales al exterior,
+lo que provocará que el tipo de cambio real se deprecie y permitiendo que se genere un superávit en la cuenta corriente, debido a que la depreciación del tipo real nos dice que se necesitan menos bienes extranjeros para adquirir un bien nacional, lo que expandirá la demanda por bienes nacionales y finalmente en un aumento de las exportaciones. Por el lado de las importaciones, una depreciación del tipo de cambio real implicara que caiga la demanda por bienes extranjeros, pues se necesitan mas bienes nacionales para comprar uno extranjero, y por tanto cae las importaciones. Lo anterior permite suavizar la contracción.
+\item[b.] Explique como sería la respuesta de la economía si la regla de política monetaria incluye el tipo de cambio real $ (e_{t}) $
+\begin{equation}
+i_{t}=\phi \pi_{t}+\tau e_{t}, \tau \in (0,1)
+\end{equation}
+
+\textbf{Respuesta:}Primero recordar que en el inciso anterior la economía estaba bajo un régimen flexible, pues la autoridad económica, en el caso de Chile, no interviene en la fijación o
+regulación del tipo de cambio. En este caso, estaremos en presencia de un régimen mixto o
+de rotación sucia, este régimen nos dice que el banco central intervendrá cuando la oscilación
+del tipo de cambio, se mueva fuera de los entandares predichos por el Banco, ahora, respecto
+al proceso anterior, en principio seguirá el mismo ritmo, sin embargo este tipo de régimen lo
+que provocara es que intensifique la contracción, pues el aumento del tipo de cambio, elevara
+la tasa de interés de corto y largo plazo.
+
+\item[c.] Usando el mismo modelo muestre que ocurre con una política monetaria restrictiva y una política fiscal expansiva.
+\end{itemize}
+
+\textbf{3. Modelo de Economía Abierta} Debe suponer una economía abierta\\
+
+IS
+\begin{equation}
+y_{t}=y_{t+1}-(r_{t}-\pi_{t+1})+\delta e_{t}+\vartheta y_{t}^{*} + \theta g_{t} + \varepsilon_{t}^{y}
+\end{equation}
+
+Curva de Phillips
+\begin{equation}
+\phi_{t}=\beta\pi_{t+1} + \lambda y_{t} +  \kappa e_{t} + \varepsilon_{t}^{\pi}
+\end{equation}
+
+Paridad de tasas de interés
+\begin{equation}
+e_{t} = e_{t+1} - (r_{t}-\pi_{t+1} + i_{t}^{*}+ \zeta_{t})
+\end{equation}
+
+Regla de Taylor
+\begin{equation}
+r_{t}= \phi\pi_{t}+\varepsilon_{t}^{r}
+\end{equation}
+
+Donde $ \zeta_{t} $ es un premio por riesgo y $ y^{*} $ es crecimiento externo. Por una sugerencia de un candidato presidencial, suponga que el banco central decide pasar de tipo de cambio flexible a tipo de cambio fijo, es decir, la paridad de tasas de interés cambia a:
+\begin{equation}
+r_{t}=i_{t}^{*}+\zeta_{t}
+\end{equation}
+
+Dejando de operar la regla de Taylor. Por otro lado, el tipo de cambio real y los precios son definidos por $ e_{t}=-p_{t} $. Suponga que tipo de cambio nominal está fijo en uno, y $ p_{t}=p_{t-1} + \pi_{t} $
+\begin{itemize}
+\item[a.] Explique el efecto sobre la economía de un shock positivo fiscal $ g_{t} $.
+
+\textbf{Respuesta:} $ \uparrow g_{t} \Rightarrow \uparrow y_{t} \Rightarrow \uparrow \sigma_{t} $, puesto que $ r_{t} $ no cambia no hay efecto sobre $ e_{t} $
+ 
+\item[b.] Explique que sucedería si el banco central trata de bajar la tasa de interés $ r_{t} $, manteniendo el tipo de cambio fijo.
+
+\textbf{Respuesta:} Inmediatamente debe $ \uparrow r_{t} $para mantener el tipo de cambio fijo. Por lo tanto no hay efecto.
+ 
+\item[c.] Explique el efecto sobre sobre la economía de un shock negativo $ y_{t}^{*} $. En específico, explique el mecanismo de ajuste que tiene la economía para retornar al pleno empleo con tipo de cambio fijo.
+
+\textbf{Respuesta:} $ \downarrow y_{t}^{*} \Rightarrow \downarrow y_{t} \Rightarrow \downarrow \pi_{t}  \Rightarrow \uparrow y_{t} $
+ 
+\item[d.] Compare el mecanismo anterior de ajuste con el ajuste que se daría con el tipo de cambio flexible. Debería el banco central seguir la sugerencia de cambiar de tipo de cambio flexible a dijo, fundamente su respuesta.
+
+\textbf{Respuesta:} $ \downarrow y_{t}^{*} \Rightarrow\downarrow y_{t} \Rightarrow\downarrow \pi_{t}  \Rightarrow \downarrow r_{t} \Rightarrow\uparrow e_{t} \Rightarrow \uparrow y_{t}$
+
+La diferencia es que el ajuste en (c.) depende de $ \pi_{t} $ y en (d.) de $ e_{t} $, ahora este último es un mecanismo más rápido, por lo tanto, flexible es mejor.
+ 
+\end{itemize}
+
+\textbf{4. Política Monetaria:} Suponga que la economía puede ser descrita por el siguiente modelo\\
+
+Euler
+\begin{equation}
+y_{t}=y_{t+1}-(i_{t}-\pi_{t+1})+d_{t}
+\end{equation}
+
+Curva de Phillips
+\begin{equation}
+\pi = \beta\pi_{t+1} + \lambda y_{t} + \varepsilon_{t}^{\pi}
+\end{equation}
+
+Regla de Taylor
+\begin{equation}
+i_{t}=\phi \pi_{t}
+\end{equation}
+
+\begin{itemize}
+\item[a.] Compare los efectos sobre la economía de los dos shocks: de oferta $ \varepsilon_{t}^{\pi} $ y de demanda $ d_{t} $.
+
+\textbf{Respuesta:} En los choques de demanda la producción y la inflación van en la misma dirección, en cambio en los choques de oferta estas variables van en direcciones opuestas. Ejemplo: si sube $d_{t}$ expande tanto la producción como la inflación. Frente a este escenario el banco central debe subir la tasa de interés. En cambio, si sube$\varepsilon_{t}^{\pi}$, para frenar la mayor inflación el banco central debe aumentar la tasa de interés y con estos contraer más la economía.
+
+\item[b.] ¿Cuándo la política monetaria se enfrenta a un trade-off? ¿ Por qué? 
+\end{itemize}
+
+\textbf{Respuesta:} El trade off se produce con los choques de oferta. Porque un choque negativo debe ser enfrentado con un aumento adicional de la tasa de interés para reducir la inflación.\\
+
+\textbf{5. Crecimiento:} Suponga que la función de producción por trabajador es:
+
+\begin{equation}
+y_{t}=k_{t}^{\alpha}=k_{t}^{0.5}
+\end{equation}
+
+Entonces el capital evoluciona de la siguiente forma, suponiendo que no hay crecimiento en la población $ (n=0) $
+
+\begin{equation}
+k_{t+1}=sak_{t}^{0.5}=0.2*3*k_{t}^{0.5}
+\end{equation}
+
+\begin{itemize}
+\item[a.] Derive en el gráfico $ (k_{t},k_{t+1}) $, representa el eje de x y el eje de y respectivamente. Explique qué sucede con el crecimiento y el ingreso por trabajador si sube la tasa de ahorro $ s $ a $ 0.3 $. Suponga $ \alpha = 3 $. Tome rangos del capital entre 0 y 2, tomando intervalos de $0.1$.
+\item[b.] ¿Qué valor debe tener $ \alpha $ para que la economía crezca para siempre si aumenta el ahorro de $ 0.2 $ a $ 0.3$? Explique porque puede ocurrir esto.
+\end{itemize}
+
+\textbf{6. Crecimiento:} Suponga que la función de producción por trabajador es:
+
+\begin{equation}
+y_{t}=Ak_{t}
+\end{equation}
+
+Entonces el capital evoluciona de la siguiente forma, suponiendo que no hay crecimiento en la población $ (n=0) $
+
+\begin{equation}
+k_{t+1}=(1-\delta)k_{t} + sAk_{t} = (1-\delta +sA)k_{t}
+\end{equation}
+
+\begin{itemize}
+\item[a.] Usando un gráfico con ejes $(k_{t+1}, k_{t})$ = (eje de las y, eje de las x), explique qué valores que valores debe tener ($ 1 - \delta +sA $) para generar crecimiento endógeno.
+
+\textbf{Respuesta:} Es la comparación del modelo sin crecimiento versus el modelo con crecimiento endógeno que presenta diagrama de fases.
+
+\item[b.] ¿ En qué situación la economía se mantendría en un estado estacionario permanente (sin crecimiento)?¿Qué políticas públicas haría usted para salir de esa situación, es decir, para incentivar el crecimiento?
+
+\textbf{Respuesta:} Todo tipo de política pública que genere crecimiento endógeno.
+
+\end{itemize}
+
+\textbf{7. Inconsistencia Dinámica:} Suponga que el banco central minimiza la siguiente función de pérdida:
+
+\begin{equation}
+\min L(\pi,Y)=-c\pi^{2}-(Y-Y^{*})^{2}
+\end{equation}
+
+Sujeto a esta restricción:
+
+\begin{equation}
+Y=bY^{*}+d(\pi-\pi^{e})
+\end{equation}
+
+Demuestre que discreción, es peor que acuerdo, pero engaño es superior a acuerdo ¿ Cómo solucionaría este dilema?\\
+
+\textbf{8. Credibilidad del Banco Central:} Suponga que el banco central minimiza la siguiente función de pérdida:
+
+\begin{equation}
+\min V=\pi^{2}+ \lambda(y-\bar{y}-k)^{2}
+\end{equation}
+
+Note que hemos supuestos que la meta del banco central $ \pi^{*}=0 $. Adicionalmente, la economía está representada por la siguiente curva de Phillips
+
+\begin{equation}
+y=\bar{y}+\theta(\pi-\pi^{e})
+\end{equation}
+
+\begin{itemize}
+\item[a.] Obtenga la inflación óptima para el banco central $ \pi $ en función de $ \pi^{e} $, $ \lambda $, $ \theta $ y $ k. $
+
+\textbf{Respuesta:} El problema consiste en:
+\begin{align*}
+\min_{\pi , y}& V=\pi^{2}+ \lambda(y-\bar{y}-k)^{2}\\
+s.a & =\bar{y}+\theta(\pi-\pi^{e})
+\end{align*}
+
+El que puede ser resuelto directamente reemplazando la restricción en la función objetivo:
+\begin{align*}
+\min_{\pi}& V=\pi^{2}+ \lambda(\theta (\pi - \pi^{e})-k)^{2}\\
+\end{align*}
+
+La condición de primer orden sería:
+\begin{align*}
+2\pi + 2\lambda\theta[\theta(\pi - \pi^{e})-k]=0
+\end{align*}
+
+Ordenando términos:
+\begin{align*}
+\pi (\pi^{e}, \lambda, \theta, k) = \dfrac{\lambda \theta^{2}}{1+\lambda \theta^{2}} + \dfrac{\lambda \theta k}{1 +\lambda \theta^{2}}
+\end{align*}
+\item[b.] Calcule la inflación de equilibrio, esto es, cuando $ \pi = \pi^{e} $; además, calcule el valor de $ V $ en equilibrio, es decir, en términos de $ \lambda $, $ \theta $ y $ k $.\\
+
+Suponga ahora que esta economía se abre al comercio y las finanzas internacionales, pero, prefiere partir con un tipo de cambio fijo. Entonces, como se cumple la paridad de poder de compra, tenemos que:
+
+\begin{equation}
+\pi=\triangle e =0
+\end{equation}
+
+\textbf{Respuesta:} Utilizando expectativas racionales, $ \pi = \pi^{e} $:
+\begin{align*}
+\pi^{eq}=\lambda \theta k > 0
+\end{align*}
+
+Y con esto, la función de valor es:
+\begin{align*}
+V^{eq}=\lambda k^{2} + \theta^{2}\lambda^{2} k^{2}
+\end{align*}
+
+\item[c.] Obtenga $ V $ en este nuevo equilibrio y compárelo con $ V $ antes de abrir la economía. ¿Apoya usted la medida?
+
+\textbf{Respuesta:} Con el sistema de tipo de cambio fijo $ \pi = 0 $ y por expectativas racionales, también $ \pi^{e} = 0 $. Por lo tanto:
+\begin{align*}
+V=\lambda k^{2} < V^{eq}
+\end{align*}
+
+Esto da una menor valor para la función de pérdida, lo que implica que para el banco central es mejor tener un tipo de cambio fijo que le permite $ \pi = \pi^{e} = \pi^{*} = 0$
+\end{itemize}
+
+\end{document}

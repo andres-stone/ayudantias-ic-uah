@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán}
+\title{Economía Matemática}
+\date{23 de Abril del 2018}
+\begin{document}
+\maketitle
+\textbf{1.} La demanda del bien 1 es $Q = f(p_{1}, p_{2}, I)$, donde $p_{i}$ es el precio del
+bien $i = 1, 2$ e $I$ es el ingreso total de la población que consume el bien 1. El estado tecnológico de la economía afecta tanto al ingreso como al precio del bien 2. Específicamente $p_{2} = F(a)$ y $I = G(a)$ donde $a \in [0,\infty )$ representa
+el estado de la tecnología. Suponemos que:
+\begin{align*}
+\dfrac{dp_{2}}{da}<0, \dfrac{dI}{da}>0
+\end{align*}
+
+Es decir, suponemos que el precio del bien 2 disminuye y el ingreso aumenta cuando el estado tecnológico mejora.
+\begin{itemize}
+\item[(a)] Asuma que el bien 1 es un bien normal. Determine el signo de $\partial Q/\partial I$.
+\item[(b)]Asumiendo que el bien 1 es un bien normal determine el signo de $\partial Q/\partial p_{1}$.
+\item[(c)] Suponga que el bien 1 y el 2 son sustitutos. Determine el signo de $\partial Q/\partial p_{2}$.
+\item[(d)] Suponga que el bien 1 y el 2 son complementarios. Determine el signo
+de $\partial Q/\partial p_{2}$.
+\item[(e)] Asumiendo que el bien 1 y el 2 son sustitutos, ¿Aumenta o disminuye la demanda del bien 1 cuando el estado tecnológico mejora?
+\item[(f)] Asumiendo que el bien 1 y el 2 son complementarios, ¿Aumenta o disminuye la demanda del bien 1 cuando el estado tecnológico mejora?
+\end{itemize}
+
+
+\textbf{2.} La demanda y oferta del bien x, están dadas por:
+\begin{align*}
+D&=a-b(P+\tau)\\
+S&=\alpha +\beta P
+\end{align*}
+Siendo $ \tau $ un impuesto por unidad consumida. Además $ a,b,\alpha $ y $ \beta $ son constante positvas.
+\begin{itemize}
+\item[(a)] Escriba la condición de equilibrio del mercado.
+\item[(b)] Muestre que la condición de equilibrio define implícitamente a $ P $ como función de $ \tau $
+\item[(c)] Obtenga usando el teorema de la función implícita $ dp/d\tau $. Corrobore su resultado resolviendo la condición de equilibrio de mercado para $ P $ y luego encontrando $ dp/d\tau $ explícitamente.
+\item[(d)] Suponga que la demanda y oferta se expresan en forma general de la siguiente manera.
+\begin{align*}
+D&=F(P+\tau)\\
+S&=G(P)
+\end{align*}
+Donde $ F $ y $ G $ son funciones diferenciables con $ F'<0 $ y $ G'>0 $. Repita los incisos anteriores.
+\end{itemize}
+
+\textbf{3.} Suponga que una empresa perfectamente competitiva vende su producto, cuya cantidad se denota por $ y $, a un precio $ p > 0 $ y compra trabajo, denotado por $ x\geq  0$, a un precio $ w >0 $. La función de producción de la empresa es $ y= F(x,a) $ donde $ a \in IR $ es un parametro que mide el estado tecnológico de la misma. Asuma que:
+\begin{align*}
+\dfrac{\partial y}{\partial a}=F_{a}(x,a)>0, \dfrac{\partial y}{\partial x}=F_{x}(x,a)>0, \dfrac{\partial y}{\partial a \partial x}=F_{ax}(x,a)>0
+\end{align*}
+Y que $ F $ es dos veces diferenciable respecto a x.
+\begin{itemize}
+\item[(a)] Escriba la función de beneficios de la empresa, $ \pi (x;p,w,a) $.
+\item[(b)] Imponga una condición que garantice que $ \pi $ sea estrictamente cóncava en $ x $.
+\item[(c)] Obtenga la condición de primer orden para maximizar beneficios. ¿Es esta condición suficiente en este caso?
+\item[(d)] Demuestre que puede usar el teorema de la función implícita y escribir la cantidad óptima de trabajo $ x^{*} $ como función de los parámetros del problema. Esto es:
+\begin{align*}
+x^{*}=x(p,w,a)
+\end{align*}
+\item[(e)] Use el resultado de $ (d) $  y las condiciones de primer orden para obtener las siguientes estáticas comparativas:
+\begin{align*}
+\dfrac{\partial x}{\partial p}, \dfrac{\partial x}{\partial w},\dfrac{\partial x}{\partial a}
+\end{align*}
+Explique los resultados obtenidos desde un punto de vista económico.
+\end{itemize}
+\end{document}

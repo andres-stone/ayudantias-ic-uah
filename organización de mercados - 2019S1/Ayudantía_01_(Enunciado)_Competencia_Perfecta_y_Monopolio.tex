@@ -1,0 +1,100 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Competencia Perfecta y Monopolio}
+\title{Organización de Mercados}
+\date{6 de Abril del 2019}
+\begin{document}
+\maketitle
+\begin{itemize}
+\item[1.] La función inversa de demanda del mercado de un bien $ q $ es $ P(q) = 12-q $. En el mercado existe un monopolista cuya función de costos es $ C(q) = 5+4q $
+\begin{itemize}
+\item[a.] Encuentre la cantidad ofrecida por el monopolista, el precio de mercado y los beneficios correspondientes.
+\item[b.] Defina y calcule el índice de Lerner de poder de mercado.
+\end{itemize}
+
+\item[2.] La demanda inversa de mercado es: $ p(q)= \max{\left\lbrace 40-3q,0\right\rbrace } $. Cuyo costos totales son de $c(q) = q^{2}$
+\begin{itemize}
+\item[a.] Escribe el problema del monopolista y calcule el precio y cantidad bajo competencia perfecta y monopolio.
+\item[b.] Grafique el problema y calcule la pérdida de bienestar.
+\end{itemize}
+
+\item[3.] La demanda inversa de mercado es: $ D(p) = 100 p^{-2} $. Cuyo costos totales son de $c(q) = 5q$
+\begin{itemize}
+\item[a.] Calcule la elasticidad de demanda.
+\item[b.] Calcule el precio y cantidad bajo competencia perfecta y monopolio.
+\end{itemize}
+
+\item[4.] Supongamos que la fabricación de computadores portátiles es una industria perfectamente competitiva. La demanda en el mercado está descrita por la seiguiente demanda inversa:
+\begin{align*}
+p(Q) = 120 - \dfrac{9}{50}Q
+\end{align*}
+Supongamos ademas que hay $ N=50 $ oferentes que tienen exactamente la misma estructura de costos de largo plazo descrita por la siguiente ecuación:
+\begin{align*}
+CT(q_{i}) &= 100 + q_{i}^{2} +100q_{i}\\
+\forall i = 1,2,\ldots ,50
+\end{align*}
+\begin{itemize}
+\item[a.] Determine la cantidad producida de computadores que permite máximizar
+beneficios a cada una de las firmas.
+
+\textbf{Respuesta:} Cada firma mazimizará beneficios si está en su condición de largo plazo, para esto:
+\begin{align*}
+CMg(q_{i}) &= CMe(q_{i})\\
+2q_{i} +10 &= \dfrac{100}{q_{i}}+q_{i}+10\\
+q_{i}^{*} = 10
+\end{align*}
+Por tanto cada firma produce 10 unidades.
+\item[b.] Determine la curva de oferta de la industria, y el precio-cantidad que la vacía. [Hint: recuerde que son firmas idénticas.]
+
+\textbf{Respuesta:} Debido a que hay 50 firmas idénticas y cada firma tiene una oferta igual a $ p=2q_{i}+10 $ podemos sumar horizontalmente, es decir
+\begin{align*}
+S(Q) &= \sum_{i=1}^{50}S_{i}q_{i}\\
+&= \sum_{i=1}^{50}p\\
+&= \sum_{i=1}^{50}2q_{i} + \sum_{i}^{50}10\\
+50p &= 2Q + 50\cdot 10\\
+p &= \dfrac{1}{25}Q +10
+\end{align*}
+Por tanto la oferta de la industria es $ S(Q) = \dfrac{1}{25}Q +10 $. KLuego el precio-cantidad que vacía el mercado se obtiene cuando
+\begin{align*}
+D(Q)&=S(Q)\\
+120 - \dfrac{9}{50}Q &=\dfrac{1}{25}Q+10\\
+Q^{*} &= 500\\
+P^{*} & = 30
+\end{align*}
+\item[c.] Determine el bienestar social bajo estas condiciones.
+
+\textbf{Respuesta:} El bienestar social $ W $ se obtiene sumando las ganancias netas que obtienen los consumidores y productores al enfrentarse a las condiciones de equilibrio, es decir:
+\begin{align*}
+W^{*} & = EC^{*} + EP^{*}\\
+& = \dfrac{(120-30)\cdot 500}{2}+\dfrac{(30-10)\cdot 500}{2}\\
+& = 27500
+\end{align*}
+\item[d.] Suponga ahora que por condiciones de eficiencia INTEL se queda con la demanda del mercado, convirtiéndose así en la firma monopólica de computadores. Determine la cantidad monopólica del mercado.
+
+\textbf{Respuesta:} El monopolista maximiza beneficios cuando $ IMg(q^{M}) = CMg(q^{M}) $, por tanto
+\begin{align*}
+IMg(q^{M}) &= CMg(q^{M})\\
+120 - \dfrac{9}{25}q^{M} &= 2q^{m}+10\\
+q^{M} & \approx 47\\
+p^{M} & \approx 112\\
+\end{align*}
+\item[e.] Compute el nuevo bienestar social y determine la perdida social debido a la existencia de monopolio.
+\textbf{Respuesta:} El bienestar social en este caso es:
+\begin{align*}
+W^{M} & = EC^{M} + EP^{M}\\
+& = \dfrac{(120-112)\cdot 47}{2}+(103-10)\cdot 47+ \dfrac{(103-10)\cdot 47}{2}\\
+& = 2797
+\end{align*}
+Luego la perdida social
+\begin{align*}
+PS = \dfrac{(112-103)(50-47)}{2} =13,5
+\end{align*}
+\end{itemize}
+\end{itemize}
+\end{document}

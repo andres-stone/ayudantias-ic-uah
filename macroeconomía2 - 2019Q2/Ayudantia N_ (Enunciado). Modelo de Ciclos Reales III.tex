@@ -1,0 +1,69 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán Salgado}
+\title{Macroeconomía II}
+\date{24 de Mayo del 2018}
+\begin{document}
+\maketitle
+\textbf{1. Modelo de Ciclos Reales} Supongamos una economía muy simple que puede ser caracterizada por un modelo donde se trabaja solo en el primer período. La producción de ese período se consume en parte y se invierte el resto para producir bienes el segundo período. Las familias maximizan la siguiente función de utilidad, donde se trabaja solo en el primer periodo:
+\begin{equation}
+\max U = ln \left( c_{1}\right) - \dfrac{N^{2}}{2}+\beta ln \left( c_{2}\right) 
+\end{equation}
+
+La restricción presupuestaria de la familia es:
+\begin{align*}
+C_{1}&=w_{1}N_{1}+\Pi_{1,1}+\Pi_{1,2}+\dfrac{B_{2}}{R_{1}}-T_{1}\\
+C_{2}&=\Pi_{2,1}+\Pi_{2,2}-B_{2}-T_{2}\\
+\end{align*}
+
+Donde $ \Pi_{1,i}, i=1,2$ son utilidades de las firmas productoras de bienes y  $ \Pi_{2,i}, i=1,2$ son utilidades de las firmas productoras de capital.
+
+
+Por otra parte, las firmas productoras de bienes tienen las siguientes funciones de producción:
+\begin{align*}
+Y_{1}&=A_{1}N_{1} &\\
+Y_{2}&=A_{2}K_{2} 
+\end{align*}
+
+
+En este caso las funciones de beneficio son:
+\begin{align*}
+\max \Pi_{1,1}:& Y_{1}-w_{1}N_{1} &\\
+\max \Pi_{2,1}:& Y_{2}-z_{2}K_{2} 
+\end{align*}
+
+Para las firmas productoras de capital la función de beneficio es la siguiente:
+\begin{align*}
+\max & \underbrace{-K_{2}}_{\Pi_{1,2}}+\dfrac{1}{R_{1}} \underbrace{\left( Z_{2}K_{2}\right) }_{\Pi_{2,2}}
+\end{align*}
+
+El Gobierno actúa de la siguiente forma:
+\begin{align*}
+G_{1}&=T_{1}-\dfrac{B_{2}}{R_{1}}\\
+G_{2}&=T_{2}+B_{2}\\
+\end{align*}
+
+Por simplicidad $ G_{1}=G_{2}=0 $
+
+El equilibrio de la economía.
+\begin{align*}
+Y_{1}&=c_{1}+K_{2}\\
+Y_{2}&=c_{2}\\
+\end{align*}
+\begin{itemize}
+\item[(a)] Analice los efectos sobre el consumo, el trabajo y la producción de un aumento de la tecnología de $ A_{1} > A_{2} = 1 $.
+\item[(b)] Suponga que queremos aumentar la prociclicidad del trabajo, entonces, nuestra función de utilidad cambia:
+\begin{align*}
+U=ln\left( C_{1}-\dfrac{N_{1}^{1+\nu}}{1+\nu}\right) + \beta ln \left( C_{2}\right) 
+\end{align*}
+Analice los efectos sobre consumo, trabajo y producción cuando hay un choque tecnológico en $ A_{1} > A_{2} = 1 $ . Además compare con inciso (a)
+\end{itemize}
+
+
+\end{document}

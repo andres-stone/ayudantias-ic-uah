@@ -1,0 +1,39 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán Salgado}
+\title{Macroeconomía II}
+\date{Marzo, 2018}
+\begin{document}
+\maketitle
+
+\textbf{1. Firmas Productoras:} Suponga una economía simple donde existe las firmas productoras de bienes y servicios maximizan sus beneficios sujetos a sus costos.  
+
+\begin{equation}
+\max_{K_{t},N_{t}}\pi:{P_{t}Y_{y}-w_{t}N_{t}-z_{t}K_{t}}
+\end{equation}
+
+\begin{itemize}
+\item[a.] Suponga una economía neoclásica definida por una función Cobb-Douglas: $ F(A,K,N)=A_{t}K_{t}^{\alpha}N_{t}^{1-\alpha} $, donde $ \alpha \in (0,1) $. Resuelva el problema de la firma productora de bienes y servicios, definiendo a $ w_{t} $  como salario nominal, a $ z_{t} $ como el precio nominal del capital, además, interprete las condiciones de optimalidad.
+\item[b.] Recuerde que la firma productora de capitales, maximiza sus beneficios sujeto a la ley de movimientos del capital, la cual está definida como: $ K_{t+1}=I_{t}+(1+\delta)K_{t} $, donde $ \delta \in [0,1] $ es la tasa de depreciación del capital. Resuelva el problema de maximización e interprete la condición de optimalidad sabiendo que la firma productoria de capital resuelve el siguiente problema: $\left( Z_{1}K_{1}-K_{2}\right) + \left( \dfrac{1}{R}\right) Z_{2}K_{2}$
+\end{itemize}
+
+\textbf{2. Q de Tobin:} Las decisiones de inversión en capital de una empresa, estarán condicionadas al ratio entre el valor de mercado de la empresa $z_{t}$ y el coste de reemplazo de este, $1 + r$. Consideremos nuevamente la firma productora de capital, pero ahora supondremos que estás deberan asumir un coste sobre la acumulación de capital, por tanto deberán resolver el siguiente modelo de optimización:\\
+\begin{equation}
+\max_{k_{t+1}} \sum_{t=1}^{T} \left( \dfrac{1}{1+r}\right) ^{t-1}(z_{t}K_{t}-I_{t})-\varnothing(K_{t+1})\\
+\end{equation}
+$s.a.$
+\begin{align*}
+K_{t+1}&=I_{t}+(1-\delta)K_{t}\\
+K_{1}&>0\\
+\varnothing(K_{2})&=0\\
+\delta&=1.0
+\end{align*}
+
+Donde $\varnothing(K_{t+1})=\dfrac{\gamma}{2}(K_{t+1}-K_{t})^{2}$ es el coste de capital. Suponga nuevamente un mundo de dos periodos. Resuelva el problema y encuentre la Q de Tobin, interprete.
+\end{document}

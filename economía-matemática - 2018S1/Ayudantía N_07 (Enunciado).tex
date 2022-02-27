@@ -1,0 +1,91 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán}
+\title{Economía Matemática}
+\date{07 de Mayo del 2018}
+\begin{document}
+\maketitle
+\textbf{1.} Pepe vive dos períodos de tiempo; Su juventud, o el presente, y su vejez, o el futuro, (período 2). La utilidad de Pepe depende de cuánto consume en ambos períodos:
+\begin{align*}
+U(c_{1},c_{2}):= u(c_{1})+\beta u(c_{2})
+\end{align*}
+Donde $u(c_{t})$ es la utilidad derivada del consumo $c_{t}$ en el período $t = 1, 2$
+y $\beta \in (0, 1)$ es el factor de descuento (valoración del futuro). Pepe dispone
+de $W$ unidades monetarias que puede usar tanto para consumir durante su juventud como para ahorrar en una AFP. Por cada unidad monetaria ahorrada durante su juventud, la AFP le devuelve a Pepe obtiene$ R > 1$
+unidades monetarias durante su vejez. En resumen: 
+\begin{align*}
+c_{1}+s&=W\\
+c_{2}&=Rs
+\end{align*}
+donde $s$ es la cantidad ahorrada en el período 1. El objetivo de Pepe es maximizar utilidad de toda su vida. Asuma que $u'(c_{t}) > 0$.
+\begin{itemize}
+\item[(a)] Exprese la utilidad de Pepe en términos de $s$, $W$ y $R$.
+\item[(b)] Plantee el problema que debe resolver Pepe.
+\item[(c)] Obtenga la condición de primer orden. Interprete la misma en términos
+económicos.
+\item[(d)] Imponga una condición sobre $u(c_{t})$ para que la condición de primer orden sea suficiente.
+\item[(e)] Demuestre que puede usar el teorema de la función implícita y escribir
+el ahorro optimo de Pepe $s^{*}$ como función de los parámetros del problema.
+\item[(f)] Use el resultado del apartado (e) para obtener las siguientes estáticas comparativas:
+\begin{align*}
+\dfrac{\partial s^{*}}{\partial W}, \dfrac{\partial s^{*}}{\partial R}, \dfrac{\partial s^{*}}{\partial \beta}
+\end{align*}
+Explique los resultados obtenidos desde un punto de vista económico.
+\item[(g)] Obtenga la función de máxima utilidad(función de utilidad indirecta) de Pepe:
+\begin{align*}
+V(W,R,\beta)
+\end{align*}
+\item[(h)] Use el teorema de la Envolvente para obtener:
+\begin{align*}
+\dfrac{\partial V(W,R,\beta)}{\partial W}, \dfrac{\partial V(W,R,\beta)}{\partial R}, \dfrac{\partial V(W,R,\beta)}{\partial \beta}
+\end{align*}
+\end{itemize}
+\newpage
+\textbf{2.} Jon vive dos períodos de tiempo; Su juventud, y su vejez, (período 2). La utilidad de Jon depende de cuánto consume en ambos períodos:
+\begin{align*}
+U(c_{1},c_{2}):= u(c_{1})+\beta u(c_{2})
+\end{align*}
+Donde $u(c_{t})$ es la utilidad derivada del consumo $c_{t}$ en el período $t = 1, 2$
+y $\beta \in (0, 1)$ es el factor de descuento (valoración del futuro). Asuma que $ u'(c_{t})>0 $. Jon dispone
+de $m$ unidades monetarias que puede usar tanto para consumir durante su juventud como para invertir en educación.
+\begin{align*}
+c_{1}+i=m
+\end{align*}
+donde $i>0$ es la inversión en educación. Su consumo futuro depende de la inversión en educación y de la calidad de su universidad a la que asiste:
+\begin{align*}
+c_{2}=ig(\mu)
+\end{align*}
+Donde $ \mu \in (0,1) $ es la calidad de la universidad a la que asiste y $ g(\mu)>0 $ es el retorno monetario debido a estudiar en una universidad de calidad $ \mu $. Un valor más alto para $ \mu $ indica que Jon asiste a una universidad de mejor calidad. Asumimos:
+\begin{align*}
+\dfrac{dg(\mu )}{d\mu } = g_{\mu }(\mu )>0
+\end{align*}
+i.e, asumimos que el consumo aumenta con la calidad de la universidad. El objetivo de Jon es maximizar la utilidad toda su vida.
+\begin{itemize}
+\item[(a)] Exprese la utilidad de Jon en términos de $i$, $m$, $\beta$ y $\mu$.
+\item[(b)] Plantee el problema que debe resolver Jon. Identifique los parámetros del modelo y la variable de control de Jon.
+\item[(c)] Obtenga la condición de primer orden e interprete la misma en términos
+económicos.
+\item[(d)] Imponga una condición sobre $u(c_{t})$ para que la condición de primer orden sea suficiente.
+\item[(e)] Demuestre que puede usar el teorema de la función implícita y escribir la inversión óptima de Jon $i^{*}$ como función de los parámetros del problema. Obtener la siguiente estática comparativa:
+\begin{align*}
+\dfrac{\partial i^{*}}{\partial \mu}
+\end{align*}
+Explique los resultados obtenidos desde un punto de vista económico.
+\item[(f)] Obtenga la función de máxima utilidad(función de utilidad indirecta) de Pep:
+\begin{align*}
+V(m,\mu,\beta)
+\end{align*}
+\item[(g)] Use el teorema de la Envolvente para obtener:
+\begin{align*}
+\dfrac{\partial V(m,\mu,\beta)}{\partial \mu}
+\end{align*}
+Explique su resultado desde un punto de vista económico. 
+\item[(h)] Encuentre la máxima cantidad de unidades monetarias que Jon está dispuesto a pagar por asistir a una universidad por $ \epsilon > 0 $ mejor a la que asiste actualmente.
+\end{itemize}
+\end{document}

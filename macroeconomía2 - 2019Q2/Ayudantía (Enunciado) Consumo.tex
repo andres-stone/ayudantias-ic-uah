@@ -1,0 +1,100 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán}
+\title{Macroeconomía II}
+\date{2018}
+\begin{document}
+\maketitle
+\textbf{1. Consumo y tasa de interés} Considere un individuo que vive por dos períodos y maximiza la siguiente función de utilidad:
+\begin{equation}
+U=log C_{1}+\beta log C_{2}
+\end{equation}
+Donde $ C_{i} $ es el consumo en el período $ i $, con $ i=1,2 $. $ \beta=\dfrac{1}{1+\rho} $ representa el factor de descuento intertemporal y $ \rho $ la tasa del descuento (que refleja sus preferencias por el futuro respecto del presente). El individuo recibe flujos de ingreso $ Y_{1} $ e $ Y_{2} $ en los periodos 1 y 2, respectivamente.
+
+Supondremos que hay una tasa de interés $ r $. La tasa de descuento es igual a la tasa de interés $ r$, en todo momento (o sea $ r $ y $ \rho $ se mueven juntos; esto es una simplificación para facilitar la solución del problema, y le permite reemplazar en todo el problema $ \rho $ por $ r $).
+\begin{itemize}
+\item[(a)] Escriba la restricción presupuestaria intertemporal del individuo y
+encuentre las expresiones para el consumo y el ahorro individual S en ambos periodos como función de los flujos de ingreso y la tasa de
+interés. ¿ Qué pasa con el ahorro cuando $Y_{1} = Y_{2}$? ¿ Por qué?
+\item[(b)] Ahora estudiaremos el impacto de un cambio en la tasa de interés sobre el ahorro, en los casos extremos. Conteste:
+\begin{itemize}
+\item[i.] ¿ Cuál es el signo del impacto de un aumento en la tasa de interés sobre el ahorro (sube o baja), cuando todo el ingreso se recibe en el período 1, es decir, $Y_{2} = 0$? Explique su resultado.
+\item[ii.] ¿ Cuál es el signo del impacto de un aumento en la tasa de interés sobre el ahorro (sube o baja), cuando todo el ingreso se recibe en el período 2, es decir, $Y_{1} = 0$? Explique su resultado.
+\end{itemize}
+\end{itemize}
+
+\textbf{2. Restricciones de liquidez, seguridad social y binestar:} En este
+problema estudiaremos cómo las restricciones de liquidez y la existencia de sistemas de seguridad social afectan el bienestar de los individuos. Para ello, supondremos una economía compuesta por tres clases de individuos: jovenes, desde el nacimiento hasta los 20 años; adultos, desde los 21 hasta los 60, y viejos, desde los 61 hasta los 70, edad a la cual mueren. Cada año nace un nuevo joven y muere un viejo\footnote{De esta forma, en la economía siempre hay 70 individuos: 20 jovenes, 40 adultos y 10 viejos}.
+
+Los individuos reciben anualmente ingresos iguales a $Y_{A}$ cuando son adultos,
+mientras que cuando son jóvenes reciben $Y_{J} = \dfrac{1}{4}Y_{A}$ al año, y en la
+vejez su ingreso es igual a $Y_{V} = \dfrac{1}{5}Y_{A}$ anuales.
+La función de utilidad de los habitantes de esta economía viene dada por:
+\begin{equation}
+U=\sum_{t=1}^{70} log C_{t}
+\end{equation}
+
+Donde $ C_{t} $ representa el consumo en cada período. Considere para todo el problema que $ r=\rho =0 $.
+\begin{itemize}
+\item[(a)]Suponga que los individuos no enfrentan restricciones de liquidez.
+Escriba el problema de optimización que afronta el individuo, incorporando
+la restricción presupuestaria (esta última no es necesario
+deducirla) y obtenga el consumo optimo $\bar{C_{t}}$ para cada período. Derive expresiones para el ahorro $s_{t}$ a lo largo de la vida del individuo y para el ahorro agregado $S_{t}$.
+\item[(b)]Suponga ahora que, durante su juventud, los individuos enfrentan
+restricciones de liquidez, de forma tal que no se pueden endeudar. Escriba el problema de optimización que enfrenta el individuo en este caso y calcule la trayectoria óptima del consumo $\bar{C_{t}}$, el ahorro
+$s_{t}$ y el ahorro agregado de la economía $S_{t}$. ¿Cómo se compara con el calculado en la parte (a)?
+\item[(c)]Calcule la utilidad de los individuos en los casos (a) y (b). ¿ En qué caso es mayor la utilidad? Explique su resultado.
+\item[(d)]Discuta qué sucede con el ahorro agregado en caso que la población crezca a una tasa de $n\%$ anual\footnote{Es decir, si en el año $t$ nacen $P_{t}$ personas, entonces en $t+1$ nacen $P_{t+1}=(1+n)P_{t}$} cuando no hay restricción de liquidez y cuando sí la hay. ¿Están mejor los individuos cuando la economía tiene mayor capacidad de ahorro?
+\item[(e)]Suponga ahora que los individuos no tienen restricciones de liquidez,
+pero se ven forzados a pagar un impuesto de suma alzada $\tau =\dfrac{1}{6}Y_{A}$durante su juventud y adultez que se les devuelve íntegramente en forma de transferencia al llegar a la vejez. Calcule nuevamente las
+trayectorias de ahorro y consumo. ¿ Tiene algún efecto sobre la conducta del individuo este mecanismo de seguridad social? ¿En qué casos se podría justificar la existencia
+de mecanismos de seguridad social?
+\end{itemize}
+
+\textbf{3. Más consumo intertemporal:} Considere una persona que vive dos
+periodos, $t$ y $t + 1$, y sus ingresos son de 100 y 150 respectivamente. Si
+la tasa de interés es del $15\%$:
+\begin{itemize}
+\item[(a)]Determine la restricción presupuestaria de este individuo y grafíquela.
+\item[(b)]Suponga que a esta persona le interesa tener el mismo consumo en
+ambos periodos. Encuentre el valor de este.
+\item[(c)]Si las preferencias de este individuo son tales que desea consumir el
+doble del primer período t en el período $t+1$, identifique el consumo en $t$ y $t + 1$.
+\item[(d)]Explique conceptual y matemáticamente que ocurre con el consumo de cada período si la tasa de interés aumenta a $20\%$. Las preferencias de consumo del individuo se mantienen como en la parte (c).
+\item[(e)]Identifique en un mismo gráfico los resultados obtenidos en las partes (c) y (d), y explique los cambios ocurridos en el consumo debido a las variaciones de la tasa de interés.
+\item[(f)]Suponga ahora que el gobierno ha instaurado un nuevo impuesto de suma alzada de 50 en cada período. Encuentre la nueva restricción presupuestaria considerando una tasa del $15\%$ y grafique.
+\item[(g)]Si la estructura de impuesto se mantiene de igual forma y el individuo desea consumir 40 en el primer período:
+\begin{itemize}
+\item[i.]¿Cuál es el consumo en $ t+1 $?
+\item[ii.]¿Cómo cambia la recta presupuestaria si los impuestos cambian de estructura y se cobra 60 en $ t $ y 40 en $ t+1 $?
+\item[iii.]¿Cómo cambia el consumo en ambos períodos?
+\end{itemize}
+\end{itemize}
+
+\textbf{4. Consumo y tasa de interés} Considere un individuo que vive por dos periodos y maximiza la siguiente función
+de utilidad:
+\begin{equation}
+U=log C_{1}+\beta log C_{2}
+\end{equation}
+
+Donde $C_{i}$ es el consumo el período $i$ con $i = 1, 2$, $\beta = \dfrac{1}{1+\rho}$ y representa el factor de descuento intertemporal y $\rho$ la tasa del descuento (que refleja sus preferencia por el futuro respecto del presente). El individuo recibe su ingreso Y repartido en los dos periodos. En 1 recibe $\alpha Y$ y en 2 recibe $(1-\alpha )Y$
+
+Supondremos que hay una tasa de interés r y el individuo se puede endeudar o ahorrar todo lo que quiera a esa tasa.
+\begin{itemize}
+\item[(a)]Escriba la restricción presupuestaria intertemporal del individuo y encuentre las expresiones para el consumo y el ahorro individual S en ambos periodos como función de $Y, \alpha, r, \beta$
+\item[(b)]Suponga que $\alpha=1 $. ¿ Cómo se afecta el ahorro cuando cambia la tasa de interés? ¿Qué pasa en el caso general de $ \alpha $ positivo menor que 1? Discuta en particular como depende la reacción del consumo en el primer período y el ahorro a $ \alpha $.
+¿ Puede ser la respuesta del ahorro negativa a un alza de la tasa de interés?
+\item[(c)]Considere el mismo individuo pero ahora su función de utilidad es la siguiente:
+\begin{equation}
+min \left\lbrace C_{1},C_{2} \right\rbrace 
+\end{equation}
+
+Determine el consumo optimo y el ahorro en cada período (el álgebra de esto es muy simple si piensa la forma de la solución óptima sin necesidad de resolver la optimización). Discuta el efecto de $r$ sobre el ahorro, en particular analice sólo los casos de $\alpha=0 $ y $\alpha=1$.¿Es posible que el ahorro se reduzca cuándo sube la tasa de interés? Compare con su respuesta anterior. (Si tiene  problemas con el álgebra, que es sencilla, este parte se puede mostrar gráficamente).
+\end{itemize}
+\end{document}

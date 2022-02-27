@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Equilibrio General}
+\title{Macroeconomía II}
+\date{08 de Junio del 2019}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item En el mercado del trabajo existen dos tipos de trabajadores; Trabajadores Formales e Informales, la principal diferencia entre estos agentes es que trabajadores formales pueden distribuir el consumo a través de periodos, no así, agentes en el mercado informal. Entonces el problema de cada agente esta dado por:
+\begin{itemize}
+\item Trabajador Formal
+\begin{align*}
+U(C,N)& = \frac{C_{1}^{F{1-\sigma}}}{1-\sigma} + \beta \frac{C_{2}^{F{1-\sigma}}}{1-\sigma}- \frac{N_{1}^{F2}}{2}+\frac{N_{2}^{F2}}{2}\\
+&s.a\\
+&C_{1} = w_{1}N_{1}^{F}+B_{2}+\pi_{1}-T_{1}\\
+&C_{2} = w_{2}N_{2}^{F}+R\cdot B_{2}+\pi_{2}-T_{2}\\
+\end{align*}
+\item Trabajador Informal
+\begin{align*}
+U(C,N)& = ln C_{1} + \beta ln C_{2}- \frac{N_{1}^{I1+\nu}}{1+\nu}+\frac{N_{2}^{I1+\nu}}{1+\nu}\\
+&s.a\\
+&C_{1}=w_{1}N_{1}^{I}-T_{1}\\
+&C_{2}=w_{2}N_{2}^{I}-T_{2}\\
+\end{align*}
+\item[a.] Encuentre la oferta de trabajo en cada periodo para cada agente.
+\item[b.] Para los trabajadores formales encuentre el euler de consumo.
+\end{itemize}
+
+\item Suponga que la función de producción de la economía incluye energía para ambos periodos: $ Y_{t}=N_{t}^{\alpha}\left( K_{t}E_{t} \right)^{1-\alpha}  $ con $ t=1,2$. Las firmas maximizan sus beneficios $ Y_{t}-w_{t}N-z_{t}K{t} $ con $t=1,2 $.
+
+\item Note que las familias son dueñas de las empresas productoras de bienes y de capital, así reciben las utilidades de estas empresas llamadas dividendos. Además, la tasa de depreciación es uno, por lo tanto, el capital del próximo periodo es igual a la inversión:
+\begin{align*}
+K_{2}=\left( 1-\delta\right)K_{1}+I_{1} 
+\end{align*}
+Y las firmas productoras de capital maximizan sus beneficios: $ z_{1}K_{1}-K_{2}+\dfrac{Z_{2}k_{2}}{R} $
+
+\item Sistematizando las ecuaciones encontradas en los enunciados anteriores, las restricciones pertinentes e incorporando los siguientes conceptos en un modelo de equilibrio general:
+\begin{itemize}
+\item Gobierno, interviene en la economía de la siguiente manera:
+\begin{align*}
+G_{1}&=T_{1}+ \mu^{G_{1}}\\
+G_{2}&=T_{2}+ \mu^{G_{2}}
+\end{align*}
+Donde $ \mu^{G_{1}} $ y $ \mu^{G_{2}} $ son shock de gobierno.
+\item Las condiciones de equilibrio de la economía:
+\begin{align*}
+C_{1}&=Y_{1}-K_{2}-G_{1}\\
+C_{2}&=Y_{2}-G_{2}
+\end{align*}
+\item Las tecnologías para ambos periodos siguen el siguiente sistema de estimaciones:
+\begin{align*}
+A_{1}&=\Omega A_{-1}+ \mu^{A_{1}}\\
+A_{2}&=\Omega A_{1}+ \mu^{A_{2}}
+\end{align*}
+Donde $ \mu^{A_{1}} $ y $ \mu^{A_{2}} $ son shock productivos.
+\item Condiciones de Agregación:
+\begin{align*}
+C_{1}&=\gamma C_{1}^{F}+(1-\gamma )C_{1}^{I}\\
+C_{2}&=\gamma C_{2}^{F}+(1-\gamma )C_{2}^{I}\\
+N_{1}&=\gamma N_{1}^{F}+(1-\gamma )N_{1}^{I}\\
+N_{2}&=\gamma N_{2}^{F}+(1-\gamma )N_{2}^{I}\\
+\end{align*}
+\end{itemize}
+
+\begin{itemize}
+\item[a.] 	Utilizando las ecuaciones sistematizadas en el punto anterior y suponiendo que el 99\% de los agentes son formales y además deudores.  Analice el impacto que tiene un shock tecnológico positivo en el segundo período. Haga especial énfasis en la ecuación de Euler, es decir, analice con profundidad el consumo intertemporal. 
+\item[b.]  	Repita inciso (a), ante una caída de la energía en el segundo periodo.
+\end{itemize}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=3cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Andrés N. Durán}
+\title{Macroeconomía II}
+\date{Mayo del 2019}
+\begin{document}
+\maketitle
+\textbf{1. Dinero} Supondremos que las familias decidirán cuanto dinero demandar para el consumo presente y futuro. Luego el problema de las familias es:
+\begin{equation}
+\max_{c_{t},m_{t},b_{2}} U(c,m): \left[ logC_{1}+log\dfrac{M_{1}}{P_{1}}+\beta\left( logC_{2}+log\dfrac{M_{2}}{P_{2}} \right)  \right] 
+\end{equation}
+\begin{align*}
+s.a&\\
+c_{1}&=Y_{1}-\dfrac{b_{2}}{1+\bar{r_{1}}}-m_{1}\\
+c_{2}&=Y_{2}+b_{2}-m_{2}+\dfrac{m_{1}}{1+\pi_{2}}
+\end{align*}
+donde $ m_{t}=\dfrac{M_{t}}{P_{t}} $, con $ M_{t} $ es la oferta nominal de dinero propuesta por el Banco Central y $ (1+\bar{r_{1}})=\dfrac{(1+r_{1})}{1+\pi_{2}} $.
+\begin{itemize}
+\item[a.]Suponga un mundo de dos periodos $ (T=2) $. Escriba el problema que enfrenta las familias, y encuentre las condiciones de primer orden, para la restricción de primer periodo utilice $ \lambda_{1} $ y para la segunda restricción utilice $ \lambda_{2} $. Además, considere que $ b_{1}=b_{3}=0 $ y $ m_{0}=0 $\\
+
+\textbf{Respuesta:} La función lagrangeano que resolvemos es:
+\begin{align*}
+L&=logC_{1}+log\dfrac{M_{1}}{P_{1}}+\beta\left( logC_{2}+log\dfrac{M_{2}}{P_{2}} \right)+\lambda_{1}\left( Y_{1}-\dfrac{b_{2}}{1+\bar{r_{1}}}-m_{1}-c_{1}\right)\\
+&+\lambda_{2}\beta\left( Y_{2}+b_{2}-m_{2}+\dfrac{m_{1}}{1+\pi_{2}}-c_{2} \right) 
+\end{align*}
+Utilizando: $ m_{1}=\dfrac{M_{1}}{P_{1}} $ y $m_{2}=\dfrac{M_{2}}{P_{2}}$ el lagrangeano nos queda así:
+\begin{align*}
+L&=logC_{1}+logm_{1}+\beta\left( logC_{2}+logm_{2} \right)+\lambda_{1}\left( Y_{1}-\dfrac{b_{2}}{1+\bar{r_{1}}}-m_{1}-c_{1}\right)\\
+&+\lambda_{2}\beta\left( Y_{2}+b_{2}-m_{2}+\dfrac{m_{1}}{1+\pi_{2}}-c_{2} \right) 
+\end{align*}
+
+Las condiciones de primer orden son:
+\begin{align*}
+\dfrac{\partial L}{\partial C_{1}}&= \dfrac{1}{C_{1}}-\lambda_{1}=0 &(1)\\ 
+\dfrac{\partial L}{\partial C_{2}}&= \beta\dfrac{1}{C_{2}}-\lambda_{2}\beta=0 &(2)\\
+\dfrac{\partial L}{\partial m_{1}}&= \dfrac{1}{m_{1}}-\lambda_{1}+\dfrac{\lambda_{2}\beta}{\pi_{2}+1}=0 &(3)\\
+\dfrac{\partial L}{\partial m_{2}}&= \beta\dfrac{1}{m_{2}}-\lambda_{2}\beta=0&(4)\\ 
+\dfrac{\partial L}{\partial b_{2}}&= \dfrac{-\lambda_{1}}{1+\bar{r_{1}}}+\lambda_{2}\beta=0 &(5)
+\end{align*}
+\item[b.]Demuestre que la demanda de saldos reales para el primer y segundo periodo son $ m_{1}=c_{1}\left[ \dfrac{1+r_{1}}{r_{1}}\right]  $ y $ m_{2}=c_{2} $ respectivamente. Interprete el como reacciona la demanda de saldos en el primer periodo ante un cambio en la tasa de interés nominal.\\
+
+\textbf{Respuesta:} De la ecuación $ (5): \dfrac{\lambda_{1}}{1+\bar{r_{1}}}=\lambda_{2}\beta  $ en la ecuación $ (3):\dfrac{1}{m_{1}}-\lambda_{1}+\dfrac{\lambda_{2}\beta}{\pi_{2}+1}=0 $ podemos obtener lo siguiente:
+\begin{align*}
+\dfrac{1}{m_{1}}-\lambda_{1}+\dfrac{\lambda_{2}\beta}{\pi_{2}+1}&=0\\
+\dfrac{1}{m_{1}}-\lambda_{1}+\lambda_{1}\dfrac{1}{1+\bar{r_{1}}}\dfrac{1}{\pi_{2}+1}&=0\\
+\dfrac{1}{m_{1}}-\dfrac{1}{C_{1}}+\dfrac{1}{C_{1}}\left( \dfrac{1}{1+r}\right)  &=0\\
+\dfrac{1}{m_{1}}-\dfrac{1}{C_{1}}+\left( 1- \dfrac{1}{1+r}\right) &=0\\
+\dfrac{1}{m_{1}}&=\dfrac{1}{C_{1}}\left( \dfrac{r}{1+r}\right)\\
+m_{1}&=C_{1}\left( \dfrac{1+r}{r} \right) 
+\end{align*}
+
+De la ecuación $ (4):\dfrac{1}{m_{2}}=\lambda_{2} $ y de $ (2): \lambda_{2}=\dfrac{1}{C_{2}} $ obtenemos:
+\begin{align*}
+\dfrac{1}{m_{2}}&=\lambda_{2}\\
+\dfrac{1}{m_{2}}&=\dfrac{1}{C_{2}}\\
+c_{2}&=m_{2}
+\end{align*}
+
+Diferenciando la demanda de saldos reales del primer periodo respecto a $ r_{1}: $
+\begin{center}
+$ \dfrac{\partial m_{1}}{\partial r_{1}}=-\dfrac{C_{1}}{r_{1}^{2}}<0 $
+\end{center}
+Esto nos dice que si el Banco Central aplica una política monetaria contractiva aumentando la tasa de interés, entonces disminuye la demanda de saldos reales del primer periodo como también el consumo presente.
+\item[c.]Utilizando $ r=\bar{r}+\pi_{2} $, reescriba la demanda de dinero del primer periodo en función de la tasa de interés real y la tasa de inflación esperada. Cómo reacciona la demanda ante variaciones en la inflación esperada?. Ayuda: suponga que $\beta\left( 1+\bar{r}\right) =1$, y que el Banco Central fija $ M_{1} $ y decide $ M_{2} $. ¿Cómo se ajusta la neutralidad del dinero en el análisis anterior?\\
+
+\textbf{Respuesta:} Reescribiendo la ecuación tenemos que: $ m_{1}=c_{1}\left( \dfrac{1+\bar{r}+\pi_{2}}{\bar{r}+\pi_{2}} \right)  $. Diferenciando la nueva ecuación con respecto a la inflación esperada obtendremos:
+\begin{center}
+$ \dfrac{\partial m_{1}}{\partial \pi_{2}}=-\dfrac{C_{1}}{\left( \bar{r}+\pi_{2}\right) ^{2}}<0   $
+\end{center}
+Luego si $\beta\left( 1+\bar{r}\right) =1 \Rightarrow C_{1}=C_{2}=c$, por tanto si el Banco Central decide aumentar $ ;M_{2} $, tendresos:
+\begin{center}
+$ \bar{m_{2}}=\dfrac{M_{2}}{P_{2}}=c\Rightarrow\uparrow M_{2} = \bar{m_{2}}P_{2}\uparrow\Rightarrow \dfrac{\uparrow P_{2}}{P_{1}}=1+\pi_{2}\uparrow $
+\end{center}
+Note que cuando $ \triangle M_{2}  $ es equivalente con $ \triangle P_{2} $ por lo que se cumple la neutralidad del dinero en el largo plazo, luego la demanda de saldos del primer periodo:
+\begin{center}
+$ \uparrow\pi_{2}\Rightarrow\downarrow\left( \dfrac{1+\bar{r_{1}}+\pi_{2}\uparrow}{\bar{r_{1}}+\pi_{2}} \right)c=\downarrow m_{1}=\dfrac{\bar{M_{1}}}{\uparrow P_{1}}  $
+\end{center}
+\end{itemize}
+\end{document}

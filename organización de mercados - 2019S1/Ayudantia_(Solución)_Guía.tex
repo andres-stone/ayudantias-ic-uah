@@ -1,0 +1,141 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\author{Teoría de Juegos y Mercados Oligopólicos}
+\title{Organización de Mercados}
+\date{11 de Abril del 2019}
+\begin{document}
+\maketitle
+\begin{itemize}
+\item[1.] Suponga que la empresa Tyco International tiene el control completo sobre el mercado de ganchos de plástico. La demanda inversa de ganchos viene dada por $ P = 3 - \dfrac{Q}{16000} $. Supongamos, además, que el costo marginal de fabricar ganchos es constante e igual a $\$ 1$.
+\begin{itemize}
+\item[a.] Calcule la cantidad y el precio que maximizan los beneficios del monopolista
+en este mercado. Calcule tambi´en el beneficio del monopolista.
+\begin{align*}
+\max \pi^{M} &= PQ-C(Q) \Rightarrow IMg(Q)=CMg(Q)\\
+& IMg(Q)=CMg(Q)\\
+& 3 -\dfrac{Q}{8000} = 1\\
+& Q^{M}=16000\\
+& P^{*} = 2
+\end{align*}
+Luego los beneficios:
+\begin{align*}
+\pi^{M}&= P^{M}Q^{M}-C(Q^{M})\\
+& = 2\cdot 16000 - 1\cdot 16000
+& = 160000 u.m.
+\end{align*}
+\item[b.] Calcule la cantidad y el precio que se obtendría en el mercado si fuese competitivo. Calcule también el beneficio que obtendría la firma en este caso.
+\begin{align*}
+\max \pi^{M} &= PQ-C(Q) \Rightarrow P=CMg(Q)
+\end{align*}
+Entonces $ P =1 $es la oferta de mercado, luego por equilibrio
+\begin{align*}
+1 = 3 -\dfrac{Q^{*}}{16000} \Rightarrow Q_{*} = 32000 \Rightarrow P^{*} =1
+\end{align*}
+Luego los beneficios de competencia es:
+\begin{align*}
+\pi^{*}&= P^{*}Q^{*}-C(Q^{*})\\
+& = 1\cdot 32000 - 1\cdot 32000
+& = 0 u.m.
+\end{align*}
+\item[c.] Compare los resultados obtenidos en los dos puntos anteriores en un gráfico y calcule la pérdida en el excedente del consumidor debido al monopolio.
+El excedente del consumidor está dado por:
+\begin{align*}
+EC = \dfrac{a - P^{i}}{2} \cdot Q^{i}
+\end{align*}
+Para $ i=*,M $ donde $ a $ es la máxima disposición a pagar que tiene el consumidor, en este caso $ a=3 $. Por tanto
+\begin{align*}
+EC^{*} &= \dfrac{3-1}{2} \cdot 32000 = 32000\\
+EC^{M} &= \dfrac{3-2}{2} \cdot 16000 = 8000
+\end{align*}
+Luego la perdida del EC es:
+\begin{align*}
+PEC = EC^{*}-EC^{*} = 24000u.m
+\end{align*}
+\end{itemize}
+
+\item[2.] Todo equilibrio que proviene de la eliminación iterada de estrategias estrictamente dominadas es un equilibrio de Nash, por lo tanto, todo equilibrio de Nash podría ser encontrado mediante la eliminación iterada de estrategias estrictamente dominadas.\vspace{0.2 cm}
+\textbf{Respuesta:} Falso, pues el NE será igual al equilibrio por eliminación iterada de estrategias estrictamente
+dominadas (EIEED), si es que existen tales estrategias, pues sino no existieran, entonces estos equilibrios no coinciden.
+
+\item[3.] Dos locales de música en vivo, Amadeus y Bachata, comparten la misma
+zona y cuentan con una clientela fiel, estimada en 100 personas por noche en el
+caso de Amadeus y 50 en el caso de Bachata. Ambos locales se plantean contratar o no a un músico famoso, que atraera más clientela siempre y cuando el local de al lado no elija la misma estrategia. Concretamente, el local Amadeus puede contratar por una sola noche a la estrella del piano Nizalbe, y el local Bachata a la estrella de la canción Lizza. Si Amadeus contrata a Nizalbe y Bachata decide no contratar,
+Amadeus tendrá 40 clientes más y Bachata perderá a 10 de los suyos. Asimismo,
+si Bachata contrata a Lizza cuando Amadeus no ha contratado música en vivo, el número de sus clientes aumentará en 50, pero Amadeus perderá 30. Finalmente, si ambos locales contratan a músicos famosos (esto es, Amadeus a Nizalbe y Bachata a Lizza), el número de sus clientes aumentará en 20 y 10 personas, respectivamente. El beneficio que deja cada cliente se puede estimar en 10 euros para Amadeus y en 20 euros para Bachata. Llamemos N y L a los precios en euros de contratar a Nizalbe y a Lizza, respectivamente, siendo 200 < L < 400 y 200 < N < 400. 
+\begin{itemize}
+\item[a.] Represente el juego anteriormente citado (en forma normal), discutiendo cuales serán los equilibrios de Nash, dependiendo de los valores N y L.
+\begin{align*}
+J &= \left\lbrace A,B \right\rbrace \\
+S_{i} & = \left\lbrace C, NC \right\rbrace \\
+\forall i \in J
+\end{align*}
+Definiendo la función de pago como sigue: $ u^{i} (s_{i},s_{j})$ por tanto
+\begin{align*}
+u^{A}(C,C) &=  (100+20)\cdot 10 - N = 1200 - N\\
+u^{A}(C,NC) &=  (100+40)\cdot 10 - N = 1400 - N\\
+u^{A}(NC,C) &=  (100-30)\cdot 10= 700\\
+u^{A}(NC,NC) &=  (100+0)\cdot 10 - N = 1000\\
+\end{align*}
+\begin{align*}
+u^{B}(C,C) &=  (50+10)\cdot 20 - L = 1200 - N\\
+u^{B}(C,NC) &=  (50-10)\cdot 20 - L =800\\
+u^{B}(NC,C) &=  (50+50)\cdot 20 - L = 2000 - N\\
+u^{B}(NC,NC) &=  (50+0)\cdot 20 - L = 1000\\
+\end{align*}
+Por tanto el juego escrito de forma normal será:
+\begin{center}
+
+\begin{tabular}{c c | c | c |}
+\hline\\
+A/B& & C & NC\\
+\hline
+ & C & 1200-N, 1200-L & 1400-N,800\\
+\hline
+  & NC & 700,2000-L & 1000,1000\\
+  \hline
+\end{tabular}
+\end{center}
+Note que $ N,L \in (200,400) $, entonces analizando las mejores decisiones, tendremos que el equilibrio de Nash será
+\begin{align*}
+NE = \left\lbrace C,C \right\rbrace , \forall L,N \in (200,400)
+\end{align*}
+\item[b.] Ambos locales se plantean añadir a las opciones anteriores una nueva alternativa: la barra libre. Si sólo uno de ellos opta por introducir la barra libre se quedará con todos los clientes, tanto si hay música en vivo en el otro local como si no. En cambio, si ambos introducen la barra libre, los clientes se mantendrán en su local preferido. El coste de la barra libre es de 200 euros para Amadeus y 100 euros para Bachata. Encuentre el nuevo equilibrio de Nash. ¿Cambia el
+equilibrio de Nash encontrado en el inciso anterior?
+\begin{align*}
+J &= \left\lbrace A,B \right\rbrace \\
+S_{i} & = \left\lbrace C, NC, BL \right\rbrace \\
+\forall i \in J
+\end{align*}
+Luego la matriz de pago será
+\begin{center}
+
+\begin{tabular}{c c | c | c | c |}
+\hline\\
+A/B& & C & NC& BL\\
+\hline
+ & C & 1200-N, 1200-L & 1400-N,800& -N,2900\\
+\hline
+  & NC & 700,2000-L & 1000,1000,& 0,2900\\
+  \hline
+  & BL & 1300-L & 1300,0 & 800,900\\
+  \hline
+\end{tabular}
+\end{center}
+Donde obtendremos el nuevo equilibrio de Nash:$ NE = \left\lbrace BL,BL \right\rbrace  $
+\end{itemize}
+
+\item[4.] Una industria productora de un cierto bien está integrada por sólo dos empresas, cuyas respectivas funciones de costos totales son $ C_{1}(q_{1}) = \frac{1}{4}q_{1}^{2}+10q_{1}+20 $ y $ C_{2}(q_{2}) = \frac{1}{3}q_{2}^{2}+8q_{2}+18 $. La demanda de mercado de este bien, está caracterizada por la siguiente función inversa $ P(Q)=30-Q $, donde $ Q=q_{1}+q_{2} $
+
+\begin{itemize}
+\item[a.] Suponga que el mercado duopolico que preseta este bien se caracteriza por su competencia a la Cournot. Determine el equilibrio de Nash bajo este contexto.
+\item[b.] Determine el precio de equilibrio, y los beneficios de ambas empresas.
+\end{itemize}
+
+\end{itemize}
+\end{document}
